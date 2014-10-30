@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/catalog_top"
+    android:padding="0dp" >
+
+    <Button
+        android:id="@+id/pdtmg_add_goods_btn"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_roundconer_selector"
+        android:gravity="center"
+        android:text="@string/save_product"
+        android:textSize="30sp"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/pdtmg_show_pic_btn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/new_pic"
+        android:gravity="center"
+        android:text="@string/set_pic"
+        android:textColor="@color/text_normal_color"
+        android:textSize="15sp"
+        android:visibility="visible" />
+
+</RelativeLayout>

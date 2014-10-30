@@ -1,0 +1,49 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/user_bg" >
+    
+    
+
+    
+      <TextView
+        android:id="@+id/userDialogusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:maxLines="1"
+        android:text="UserName"
+        android:textSize="20sp" />
+      
+    
+ 
+    <Button
+        android:id="@+id/userDialogchangeaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userDialogusername"
+        android:layout_alignLeft="@+id/userDialogusername"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/user_dialog_button"
+        android:text="@string/change_account" 
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/userDialoglockaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/userDialogchangeaccount"
+        android:layout_below="@+id/userDialogchangeaccount"
+        android:background="@drawable/user_dialog_button"
+        android:layout_marginTop="10dp"
+        android:text="@string/lock_account"
+        android:textColor="@color/white" />
+
+ 
+</RelativeLayout>

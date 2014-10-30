@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <com.koolyun.mis.widget.MSignView
+        android:id="@+id/signnameArea"
+        android:layout_width="1198dp"
+        android:layout_height="435dp"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="30dp"
+        android:background="@drawable/pay_sign_bg" />
+    <TextView 
+        android:id="@+id/sign_alert_info"
+        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_alignRight="@+id/signnameArea"
+        android:layout_alignBottom="@+id/signnameArea"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="18dp"
+        android:textColor="#ccc"
+        android:textSize="18sp"
+        android:text = "@string/sign_alert_info"
+        android:gravity="center"/>
+
+    <ImageView 
+        android:layout_width="1100dp"
+        android:layout_height="2dp"
+        android:background="@drawable/split_2"
+        android:layout_alignRight="@+id/sign_alert_info"
+        android:layout_above="@+id/sign_alert_info"/>
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sign_close"
+        android:layout_alignLeft="@+id/signnameArea"
+        android:layout_alignBottom="@+id/signnameArea"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="45dp"/>
+    <Button android:id="@+id/resign_btn"
+        android:layout_below="@+id/signnameArea"
+        android:layout_alignLeft="@+id/signnameArea"
+        android:layout_marginTop="25dp"
+        android:layout_width="586dp"
+        android:layout_height="80dp" 
+        android:text="@string/sign_cancel"
+        android:textSize = "40sp"
+        android:textColor = "@color/text_normal_color"
+        android:background="@drawable/button_xml"/>
+    <Button android:id="@+id/sign_confirm"
+        android:layout_alignTop="@+id/resign_btn"
+        android:layout_alignRight="@+id/signnameArea"
+        android:layout_width="586dp"
+        android:layout_height="80dp" 
+        android:text="@string/sign_confirm"
+        android:textColor = "@color/solid_white"
+        android:textSize = "40sp"
+        android:background="@drawable/btn_bg_xml"/>
+</RelativeLayout>

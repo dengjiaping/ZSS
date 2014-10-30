@@ -1,0 +1,38 @@
+<RelativeLayout
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom" >
+ <!--         android:background="@drawable/cart_cover" -->
+    
+        <com.koolyun.mis.widget.MyImageButton1
+            android:id="@+id/productmanagergood_kind"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/product_list"
+            android:textColor="@color/text_normal_color"
+            android:background="@drawable/goods_list_button1"
+            android:textSize="25sp" />
+ <!--  android:background="@drawable/good_list_button_xml" -->
+        <com.koolyun.mis.widget.MyImageButton1
+            android:id="@+id/productmanager_goodsattr"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/productmanagergood_kind"
+            android:textColor="@color/text_normal_color"
+            android:textSize="25sp"
+            android:text="@string/manual_input"
+            android:background="@drawable/keyboard_button1" />
+        <com.koolyun.mis.widget.MyImageButton1
+            android:id="@+id/productmanager_goodonsale"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/productmanager_goodsattr"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/text_normal_color"
+            android:textSize="25sp"
+            android:text="@string/manual_input"
+            android:background="@drawable/goods_list_button0" />
+        
+</RelativeLayout>

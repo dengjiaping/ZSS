@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp" >
+ 	
+    <TextView
+        android:id="@+id/prdmg_attr_list_textview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:background="@color/v2_gridview_item_bg_nor"
+        android:gravity="center"
+        android:maxLines="2"
+        android:maxWidth="500dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="aaaa"
+        android:textColor="@color/v2_product_display_normal"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/product_category_selected" />
+ 	<!-- <CheckBox
+ 	    android:id="@+id/prdmg_att_listdeletbtn"
+ 	    android:layout_width="30dp"
+ 	    android:layout_height="30dp"
+ 	    android:drawableRight="@drawable/attrcheckbox"
+ 	    android:focusable="false"
+ 	    android:clickable="true"
+ 	    android:button="@null"
+ 	    android:layout_alignParentBottom="true"
+ 	    android:layout_alignParentRight="true" />
+
+ 	
+    <TextView
+        android:id="@+id/prdmg_attr_list_textview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:background="@color/v2_gridview_item_bg_nor"
+        android:gravity="center"
+        android:maxLines="2"
+        android:maxWidth="500dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="aaaa"
+        android:textColor="@color/v2_product_display_normal"
+        android:textSize="30sp" /> -->
+
+</RelativeLayout>

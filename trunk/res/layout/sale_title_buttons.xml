@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+    	android:layout_height="match_parent"
+    	android:orientation="horizontal"
+    	android:gravity="center" >
+    	
+        <RadioButton
+            android:id="@+id/shoppingPage"
+            android:layout_height="match_parent"
+            android:layout_width="180dp" 
+            android:gravity="center"
+            android:button="@null"
+            android:layout_gravity="center"
+            android:text="@string/shoppingPage"
+            android:drawablePadding="-10dp"
+            android:textSize="26.0px"
+            android:paddingLeft="10dp"
+            android:checked="true"
+            android:drawableLeft="@drawable/head_recent"
+            android:background="@drawable/head_radio_xml" />
+        
+        <RadioButton
+            android:id="@+id/recentRecord"
+            android:layout_height="match_parent"
+            android:layout_width="180dp" 
+            android:gravity="center"
+            android:button="@null"
+            android:layout_gravity="center"
+            android:text="@string/dataStatistics"
+            android:drawablePadding="-10dp"
+            android:textSize="26.0px"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/head_recent"
+            android:background="@drawable/head_radio_xml"/>
+        
+         
+         <RadioButton
+            android:id="@+id/merchantManager"
+            android:layout_height="match_parent"
+            android:layout_width="180dp" 
+            android:button="@null"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:drawablePadding="-10dp"
+            android:textSize="26.0px"
+            android:text="@string/goodsmanager"
+            android:drawableLeft="@drawable/head_user"
+            android:background="@drawable/head_radio_xml"/>
+        
+       
+         <RadioButton
+            android:id="@+id/recentSetting"
+            android:layout_height="match_parent"
+            android:layout_width="180dp" 
+            android:button="@null"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:drawablePadding="-10dp"
+            android:textSize="26.0px"
+            android:text="@string/settoperation"
+            android:drawableLeft="@drawable/setting"
+            android:background="@drawable/head_radio_xml"/>
+        
+    </RadioGroup>
+    
+    <ImageView 
+        android:id="@+id/actionbarline1"
+         android:layout_width="1dp"
+         android:layout_height="30dp"
+         android:background="#818181"
+         android:layout_marginLeft="182dp"
+         android:layout_centerVertical="true" />
+    
+     <ImageView 
+         android:id="@+id/actionbarline2"
+         android:layout_width="1dp"
+         android:layout_height="30dp"
+         android:background="#818181"
+         android:layout_marginLeft="363dp"
+         android:layout_centerVertical="true" />
+ 
+        <Button
+            android:id="@+id/sale_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/title_button_xml"
+            android:drawableLeft="@drawable/head_user"
+            android:text="@string/username"
+            android:visibility="gone"
+            android:textColor="@color/text_normal_color" />
+        
+         <ImageView 
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="#818181"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/sale_user_name"
+            android:layout_centerVertical="true" />
+
+        <Button
+            android:id="@+id/sale_recent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            android:text="@string/resent_sale"
+            android:layout_toRightOf="@+id/sale_user_name"
+            android:textColor="@color/text_normal_color"
+            
+            android:background="@drawable/title_button_xml"
+            android:drawableLeft="@drawable/head_recent"/>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/sale_recent"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"
+            android:background="#818181"
+            android:layout_centerVertical="true" />
+        
+         <Button
+            android:id="@+id/productmanager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            android:text="@string/control_panel"
+            android:layout_toRightOf="@+id/sale_recent"
+            android:textColor="@color/text_normal_color"
+            android:background="@drawable/title_button_xml"
+            android:drawableLeft="@drawable/head_dash2"/>
+        
+</RelativeLayout>

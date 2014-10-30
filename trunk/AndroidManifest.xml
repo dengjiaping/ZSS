@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.koolyun.mis"
+    android:versionCode="12"
+    android:versionName="1.0.23" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    
+	<uses-permission android:name="android.permission.CHANGE_ALARM" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.KOOLCLOUD_PRINTER" />
+	
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	
+	<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>  
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>    
+    
+    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+    
+    <!-- 支付权限 -->
+    <uses-permission android:name="com.cynovo.Payment.permission.DemoPay"></uses-permission>
+	<!-- 设备信息权限 -->
+	<uses-permission android:name="com.cynovo.Payment.permission.PosInfo"></uses-permission>
+	<!-- 设备激活权限 -->
+	<uses-permission android:name="com.cynovo.Payment.permission.Register"></uses-permission>
+	<!-- 硬件的初始状态 -->
+	<uses-permission android:name="com.cynovo.Payment.permission.HWState"></uses-permission>
+    
+    <application
+        android:name="com.koolyun.mis.util.CloudPosApp"
+        android:allowBackup="true"
+        android:icon="@drawable/kivvi_icon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.CustomActivityTheme"
+        android:largeHeap="true" >
+        
+        <activity
+            android:name="com.koolyun.mis.LoginInActivity"
+            android:label="@string/app_name" 
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+<!--                 <action android:name="android.intent.action.sirius.LoginIn" /> -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.koolyun.mis.ActiveActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|screenSize"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.sirius.Active" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.koolyun.mis.ForgetPasswordActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|screenSize"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.sirius.ForgetPassword" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.koolyun.mis.SaleActivity" 
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan|stateUnchanged"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.sirius.Sale" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.koolyun.mis.ProductManagerActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.sirius.ProductManager" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.koolyun.mis.BillingActivity" 
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.sirius.Pay" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.koolyun.mis.RefundActivity" 
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.sirius.Refund" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.koolyun.mis.ReverseActivity" 
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.sirius.Reverse" />
+            </intent-filter>
+        </activity>
+        
+        <service android:name="com.koolyun.mis.finance.PosService" >
+
+        </service>
+        
+        <service android:name="com.koolyun.mis.finance.ReverseService" >
+
+        </service>
+                
+        <service android:name="com.koolyun.mis.util.communicate.PollService" >
+        </service>
+		
+        <receiver
+            android:name="com.koolyun.mis.util.BootReceiver"
+            android:enabled="true"
+            android:exported="true" >
+			<intent-filter>
+    			<action android:name="android.intent.action.BOOT_COMPLETED" />
+  			</intent-filter>
+        </receiver>
+        
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5251166056240b85062fc6d3" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" >
+        </meta-data>
+        
+    </application>
+
+</manifest>

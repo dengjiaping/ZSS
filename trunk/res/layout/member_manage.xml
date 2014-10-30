@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	<!-- 标题 -->
+    <RelativeLayout
+        android:id="@+id/titleLayout"
+        style="@style/left_top_style"
+        >
+        <EditText
+            android:id="@+id/memberManageCardNoEdit"
+            android:layout_width="400dp"
+            android:layout_height="90dp"
+            android:hint="@string/input_phone_or_name"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:background="@drawable/search_area"
+        	android:textColorHint="#C7C7C7"
+        	android:paddingLeft="80dp"
+        	android:paddingRight="40dp"
+            />
+        <ImageButton
+            android:id="@+id/addMemberShipButton"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/name_add_xml"
+            />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/subTitleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/titleLayout"
+        >
+        <TextView
+            android:layout_width="119dp"
+            android:text="@string/acount_name"
+            style="@style/membership_manage_text"
+            />
+        <TextView
+            android:layout_width="241dp"
+            android:text="@string/phone"
+            style="@style/membership_manage_text"
+            />
+        <TextView
+            android:layout_width="237dp"
+            android:text="@string/membership_card"
+            style="@style/membership_manage_text"
+            />
+        <TextView
+            android:layout_width="172dp"
+            android:text="@string/membership_total"
+            style="@style/membership_manage_text"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:layout_below="@id/subTitleLayout"
+        ></ListView>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+    <fragment
+        android:id="@+id/left_bar_fragment"
+        android:name="com.koolyun.mis.fragment.LeftBarFragment"
+        android:layout_width="900dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="start" />
+
+</android.support.v4.widget.DrawerLayout>

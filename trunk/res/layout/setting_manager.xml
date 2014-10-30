@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/trade_bg"
+    android:layout_marginTop="25dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp" 
+    android:layout_marginBottom="25dp" >
+      
+   <RadioGroup
+       android:id="@+id/settingRadioGp"
+       android:layout_width="wrap_content"
+       android:layout_height="100dp"
+       android:orientation="horizontal" >
+      
+       <RadioButton
+           android:id="@+id/settingUserManage"
+           android:layout_width="200dp"
+           android:layout_height="match_parent"
+           android:button="@null"
+           android:checked="true"
+           android:text="@string/usermanager" 
+           android:gravity="center"
+           android:textSize="28.0px"
+           android:textColor="@color/text_normal_color"
+           android:background="@drawable/setting_radio_btn_xml"/>
+       
+       <TextView
+	       android:id="@+id/settingLineText"
+	       android:layout_width="1dp"
+	       android:layout_height="match_parent"
+	       android:layout_marginTop="10dp"
+	       android:layout_marginBottom="10dp"
+	       android:background="@color/line_list_color" />
+       
+         <RadioButton
+           android:id="@+id/settingProductDir"
+           android:layout_width="200dp"
+           android:layout_height="match_parent"
+           android:button="@null"
+           android:text="商品目录" 
+           android:gravity="center"
+           android:textSize="28.0px"
+           android:visibility="gone"
+           android:background="@drawable/setting_radio_btn_xml" />
+   </RadioGroup>
+   
+   <TextView
+       android:id="@+id/settingLineText"
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_below="@id/settingRadioGp"
+       android:background="@color/text_normal_color" />
+   
+   <LinearLayout
+       android:id="@+id/settingLayout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_below="@id/settingLineText" />
+
+</RelativeLayout>

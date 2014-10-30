@@ -1,0 +1,42 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+  
+    <ImageView
+        android:id="@+id/leftbarpauseideal"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+ 
+    <TextView
+        android:id="@+id/leftbartime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/leftbarkind"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="49dp"
+         />
+ 
+      
+    <TextView
+        android:id="@+id/leftbarmoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="106dp"
+        android:layout_toRightOf="@+id/leftbarpauseideal"
+        
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/leftbarkind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/leftbarpauseideal"
+        android:layout_alignLeft="@+id/leftbarmoney"
+        android:textSize="25sp" />
+ 
+</RelativeLayout>

@@ -1,0 +1,217 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:background="@drawable/catalog_bg" >
+
+    <include
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        layout="@layout/productmanageritem_top1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/top" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/layout_name"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/prdmg_attr_show_kindText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/attr_name"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/prdmg_attr_add_inputedit"
+                    style="@style/input_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/prdmg_attr_show_kindText"
+                    android:background="@drawable/input_bg"
+                    android:hint="@string/input_name"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLength="@integer/product_name_limit_length"
+                    android:paddingLeft="10dp"
+                    android:textSize="20sp" >
+
+                    <requestFocus />
+                </EditText>
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/check_btn_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/layout_name"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio_single"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/add_attr_radio_xml"
+                    android:drawablePadding="20dp"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/single_select"
+                    android:textSize="25sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_multi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/add_attr_radio_xml"
+                    android:drawablePadding="20dp"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/multy_select"
+                    android:textSize="25sp" />
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/prdmg_attr_imageview"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/check_btn_group"
+                android:background="@drawable/product_line" />
+            <!-- 属性编辑 -->
+
+            <RelativeLayout
+                android:id="@+id/hello_attr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/prdmg_attr_imageview"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/product_add_attr_background"
+                android:minHeight="370dp" >
+
+                <RelativeLayout
+                    android:id="@+id/sublist_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/subattr_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/price_attr"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="200dp"
+                        android:layout_toRightOf="@+id/subattr_name"
+                        android:text="@string/price_factor"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:id="@+id/prdmg_attr_imageview_below"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/subattr_name"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/product_line" />
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/prdmg_attr_listView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@id/sublist_title"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:transcriptMode="normal" >
+                </ListView>
+
+                <ImageView
+                    android:id="@+id/prdmg_attr_add_top_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/prdmg_attr_listView"
+                    android:background="@drawable/product_line" />
+                <!-- 添加属性因子 -->
+
+                <Button
+                    android:id="@+id/prdmg_attr_add_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@id/prdmg_attr_add_top_image"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:background="#FFFFFF"
+                    android:drawableLeft="@drawable/proudct_update_add"
+                    android:drawablePadding="10dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="10dp"
+                    android:text="@string/add_price_attr"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/prdmg_attr_add_bottom_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/prdmg_attr_add_btn"
+                    android:background="@drawable/product_line" />
+
+                <!-- 删除本属性 -->
+
+                <Button
+                    android:id="@+id/prdmg_attr_delete_btn"
+                    style="@style/manager_delete_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/prdmg_attr_add_bottom_image"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/manager_delet_select"
+                    android:shadowColor="#000"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="@string/delete_attr"
+                    android:textColor="@color/gray_color" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/hello_attr" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

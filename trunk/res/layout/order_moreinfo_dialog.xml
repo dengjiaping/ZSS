@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/detail_bg">
+    
+        <LinearLayout
+	        android:id="@+id/linearLayout1"
+	        android:layout_width="match_parent"
+	        android:layout_height="59dp"
+	        android:layout_alignParentTop="true"
+	        >
+	        <Button
+	            android:id="@+id/order_more_info"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="1.0"
+	            android:gravity="center"
+	            android:textColor="@android:color/black"
+	            android:background="@drawable/statistics_selector2"
+	            android:textSize="25sp" />
+	
+	        <Button
+	            android:id="@+id/order_onsale_info"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="1.0"
+	            android:gravity="center"
+	            android:textColor="@android:color/darker_gray"
+	            android:background="@drawable/statistics_selector"
+	            android:textSize="25sp" />
+	    </LinearLayout>
+	
+    <android.support.v4.view.ViewPager
+        android:id="@+id/orderMoreInfoPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentBottom="true"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+</RelativeLayout>

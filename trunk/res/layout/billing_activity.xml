@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/billing_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+        
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/trade_bg" > 
+		<fragment 
+		   	android:name="com.koolyun.mis.fragment.PayTopBarFragment"
+		 	android:id="@+id/pay_top_bar"
+		    android:layout_width="match_parent" 
+		   	android:layout_height="@dimen/pay_top_height1" />
+		<ScrollView
+	     	android:id="@+id/billscrolling" 
+	      	android:layout_width="fill_parent"
+	      	android:layout_height="fill_parent"
+	      	android:layout_below="@+id/pay_top_bar" >
+			<FrameLayout 
+		  	    android:id="@+id/billing_fragmnet_container"
+		   	   	android:layout_width="match_parent"
+		   	    android:layout_height="wrap_content">
+			</FrameLayout>
+	 
+		</ScrollView>	
+	</RelativeLayout>
+		<!-- 
+	<ViewStub  
+         android:id = "@+id/viewStubBilling"  
+         android:layout = "@layout/common_leftbar"  
+         android:layout_width = "wrap_content"  
+         android:layout_height = "wrap_content"  
+        /> 
+ 
+	<include layout="@layout/common_leftbar" />
+	-->
+</RelativeLayout>

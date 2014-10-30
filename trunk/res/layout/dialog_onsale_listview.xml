@@ -1,0 +1,33 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:minHeight="60dp">
+
+    <Switch
+	    android:id="@+id/dialog_onsale_switchBtn"
+	    android:layout_centerVertical="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        style="@style/Switch" />
+        
+    <TextView
+        android:id="@+id/dialog_onsale_show_textview"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="350dp"
+        android:singleLine="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/dialog_onsale_switchBtn"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="25sp" />
+    
+    
+
+ 
+</RelativeLayout>

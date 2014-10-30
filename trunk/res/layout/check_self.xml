@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/catalog_bg"
+    tools:context=".ui.fragment.CheckSelfFragment" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/tpbar"
+        android:gravity="center"
+        android:text="@string/selftest"
+        android:textColor="@color/text_normal_color"
+        android:textSize="30sp" />
+
+    <RadioButton
+        android:id="@+id/check_result_icon"
+        android:layout_width="480dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/transparent_background"
+        android:button="@null"
+        android:clickable="false"
+        android:drawableLeft="@drawable/check_self_alert"
+        android:drawablePadding="10dp"
+        android:gravity="center|left"
+        android:text="@string/self_in_process"
+        android:textColor="@color/text_normal_color"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/re_check_btn"
+        android:layout_width="142dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/transparent_background"
+        android:drawableLeft="@drawable/check_self2"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="@string/self_re_check"
+        android:textColor="#32abd6"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/check_result_list"
+        android:layout_width="661dp"
+        android:layout_height="206dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="160dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.AlertDialogFragment" >
+
+    <!-- 长按点击购买chargelist的item后产生的Dialog -->
+
+    <RelativeLayout
+        android:id="@+id/dialog_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/detail_bg"
+        android:gravity="center_horizontal" >
+		<!-- 商品名 -->
+        <TextView
+            android:id="@+id/dialog_show_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:maxLines="1"
+            android:maxWidth="300dp"
+            android:textColor="@color/text_normal_color"
+            android:textSize="25sp" />
+		<!-- 价格 -->
+        <com.koolyun.mis.widget.MoneyView
+            android:id="@+id/dialog_show_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/dialog_show_name"
+            android:layout_alignBottom="@+id/dialog_show_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/text_normal_color"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/dialog_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dialog_show_name"
+            android:layout_below="@+id/dialog_show_name"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/detail_minus_button_xml" />
+
+        <Button
+            android:id="@+id/dialog_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/dialog_show_number"
+            android:layout_alignRight="@+id/dialog_show_price"
+            android:background="@drawable/detail_plus_button_xml" />
+
+        <EditText
+            android:id="@+id/dialog_show_number"
+            android:layout_width="200dp"
+            android:layout_height="82dp"
+            android:layout_alignBottom="@+id/dialog_minus"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/typein_frame"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="3"
+            android:singleLine="true"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/dialog_onsale_button"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_alignLeft="@+id/dialog_minus"
+            android:layout_alignRight="@+id/dialog_plus"
+            android:layout_below="@+id/dialog_show_number"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/discount36"
+            android:drawablePadding="20dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/privilege"
+            android:textColor="@color/text_normal_color"
+            android:textSize="25sp" />
+
+        <ViewFlipper
+            android:id="@+id/dialog_viewflipper"
+            android:layout_width="wrap_content"
+            android:layout_height="340dp"
+            android:layout_alignLeft="@+id/dialog_minus"
+            android:layout_alignRight="@+id/dialog_plus"
+            android:layout_below="@+id/dialog_onsale_button"
+            android:layout_marginTop="0dp" >
+
+            <include layout="@layout/dialog_onsale_show1" />
+
+            <include layout="@layout/dialog_onsale_show2" />
+        </ViewFlipper>
+    </RelativeLayout>
+	<!-- 右侧小箭头 -->
+    <ImageView
+        android:id="@+id/dialog_arrow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="180dp"
+        android:contentDescription="@string/imageviewtext"
+        android:src="@drawable/detail_arrow" />
+
+</RelativeLayout>

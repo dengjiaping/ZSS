@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/catalog_bg">
+    
+    <include
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        layout="@layout/productmanageritem_top1" />
+    
+
+	<TextView
+        android:id="@+id/settingProductDirText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28.0px"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="60dp"
+        android:text="当前使用的商品目录为 ：商品目录二" 
+        android:visibility="gone"/>
+    
+	<ViewFlipper
+		android:id="@+id/settingViewFlipper"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@id/top"
+	    android:layout_marginTop="20dp">
+	    
+	      <RelativeLayout
+	        android:layout_width="match_parent"
+	    	android:layout_height="match_parent" >
+	        
+	         <ListView
+	             android:id="@+id/settingDonwLoadListView"
+	             android:layout_height="300dp"
+	             android:layout_width="match_parent"
+	             android:cacheColorHint="#00000000"
+	             android:listSelector="#00000000"
+	             android:divider="@null"
+	             android:dividerHeight="10dp"
+	             android:scrollbars="@null" />
+	         
+	         <Button
+	             android:id="@+id/settingDownLoadSureBtn"
+	             android:layout_width="150dp"
+	             android:layout_height="wrap_content"
+	             android:layout_marginTop="15dp"
+	             android:layout_below="@id/settingDonwLoadListView"
+	             android:layout_alignLeft="@id/settingDonwLoadListView"
+	             android:text="@string/sure"
+	             android:visibility="gone" />
+	         
+	         <Button
+	             android:id="@+id/settingDownLoadCancelBtn"
+	             android:layout_width="150dp"
+	             android:layout_height="wrap_content"
+	             android:layout_marginTop="15dp"
+	             android:layout_alignTop="@id/settingDownLoadSureBtn"
+	             android:layout_alignRight="@id/settingDonwLoadListView"
+	             android:text="@string/cancel"
+	             android:visibility="gone" />
+	         
+	    </RelativeLayout>
+	
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	    	android:layout_height="match_parent" >
+	       
+	        <Button
+	            android:id="@+id/settingDownLoadBtn"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="100dp"
+	            android:layout_marginLeft="150dp"
+	            android:layout_marginRight="150dp"
+	            android:background="@drawable/sale_button"
+	            android:text="@string/settingDownLoadDir" />
+	    </RelativeLayout>
+	    
+	</ViewFlipper>
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/temp1"
+        android:layout_width="700dp"
+        android:layout_height="570dp"
+        android:background="@drawable/attribute_input" >
+
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/product_attr"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/attribute_favorable_selecter"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:text="@string/goodsattr"
+                android:textSize="26.0px" />
+
+            <RadioButton
+                android:id="@+id/product_favorable"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                 android:textColor="@android:color/black"
+                android:layout_weight="1"
+                android:background="@drawable/attribute_favorable_selecter"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/goodsonsale"
+                android:textSize="26.0px" />
+        </RadioGroup>
+
+        <ViewFlipper
+            android:id="@+id/dialog_viewflipper"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/group"
+            android:layout_marginTop="5dp" >
+
+            <GridView
+                android:id="@+id/gv_product_attr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:drawSelectorOnTop="true"
+                android:gravity="center"
+                android:horizontalSpacing="5dp"
+                android:listSelector="@null"
+                android:numColumns="4"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:scrollbars="none"
+                android:verticalSpacing="5dp" />
+
+            <GridView
+                android:id="@+id/gv_product_favorable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:drawSelectorOnTop="true"
+                android:gravity="center"
+                android:horizontalSpacing="5dp"
+                android:listSelector="@null"
+                android:numColumns="4"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:scrollbars="none"
+                android:verticalSpacing="5dp" />
+        </ViewFlipper>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_attr_Favorable_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-7dp"
+        android:layout_toRightOf="@id/temp1"
+        android:src="@drawable/attribute_input_arrow" />
+
+</RelativeLayout>

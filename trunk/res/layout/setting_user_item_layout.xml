@@ -1,0 +1,36 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minHeight="100dp"
+    android:gravity="center_vertical" > 
+ 
+    <TextView
+        android:id="@+id/settingUserItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:drawableLeft="@drawable/head_user"
+        android:textSize="25.0px"
+        android:layout_marginLeft="75dp"
+        android:drawablePadding="50dp"/>
+    
+    <Button
+        android:id="@+id/settingUserChangeBtn"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="@string/settingChange" 
+        android:background="@drawable/button_comm_selector_xml"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"/>
+    
+    <Button
+        android:id="@+id/settingUserDeleteBtn"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/settingUserChangeBtn"
+        android:layout_marginRight="30dp" 
+        android:background="@drawable/button_comm_selector_xml"
+        android:text="@string/settingDelete"/>
+       
+ </RelativeLayout> 

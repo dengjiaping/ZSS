@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">酷收银</string>
+    
+   	<string name="user_name"></string>
+   	<string name="select_user">选择用户</string>
+    <string name="user_login_in">用户登录</string>
+    <string name="apply_for">商户申请</string>
+    <string name="help_center">帮助中心</string>
+    
+    <string name="login_in">登  录</string>
+    
+    <string name="resent_sale">销售记录</string>
+    
+    <string name="admin_setting">控制面板</string>
+    
+    <string name="user_hint">用户名</string>
+    <string name="pass_hint">密码</string>
+    
+    <string name="info_input_cash">现金支付</string>
+    <string name="info_input_card">刷卡支付</string>
+    
+    <string name="settlement">结算</string>
+    
+    <string name="sign_delete">清除</string>
+    <string name="sign_ok">确认</string>
+    <string name="input_pass">输入密码</string>
+    
+    <string name="sign_cancel">重新签名</string>
+    <string name="sign_confirm">确认签名</string>
+    
+    <string name="sign_alert_info">在支付之前，需要顾客亲自签字确认。如出现法律纠纷应以此为据</string>
+    <string name="sent_trade_info">发送订单信息</string>
+    
+    <string name="send_info">发送</string>
+    <string name="during_send_info">发送中</string>
+    <string name="send_info_success">成功</string>
+    <string name="send_info_fail">失败</string>
+    
+    <string name="input_phone_number">请输入手机号码</string>
+    <string name="input_email_address">请输入邮箱地址</string>
+    <string name="print_receipt">打印收据</string>
+    <string name="discountname">所有优惠类</string>
+    <string name="allname">所有商品</string>
+    <string name="accounts">结算</string>
+    <string name="hangup">挂单</string>
+    <string name="backshoppPage">返回购物页面</string>
+    
+    <string name="product_list">商品分类</string>
+    <string name="product_add">新增商品</string>
+    <string name="product_category_add">新增分类</string>
+    <string name="product_attr_add">新增属性</string>
+    <string name="product_onsale_add">新增优惠</string>
+    <string name="manual_input">手动输入</string>
+    <string name="canceldiscount">取消商品</string>
+    <string name="shopping_car">购物车</string>
+    <string name="clear_shopping_car">清空购物车</string>
+
+    <string name="privilege">优惠</string>
+
+    <string name="send_orderinfo">发送数据</string>
+    <string name="revocation_order">撤销订单</string>
+    <string name="recover_order">恢复挂单</string>
+    <string name="order_detail">订单详情</string>
+    <string name="lookup_bills">查看单据</string>
+    
+    <string name="imageviewtext"></string>
+
+    <string name="control_panel">控制面板</string>
+    <string name="pause_deal">挂单</string>
+    <string name="not_sync">未同步</string>
+    <string name="last_record">近期销售</string>
+    <string name="all_record">全部记录</string>
+    <string name="username">用户名</string>
+    <string name="input_password">请输入密码</string>
+    <string name="click_unlock">点击解锁</string>
+    
+     <string name="rec_merchantname">商户名称：</string>
+    <string name="rec_merchantid">商户编号：</string>
+    <string name="rec_terminal">终端编号：</string>
+    <string name="rec_opmanno">操作员：</string>
+    <string name="rec_issuer">发卡行号：</string>
+    <string name="rec_cardnum">卡号：</string>
+    <string name="rec_cardexpration">卡有效期：</string>
+    <string name="rec_cardlinenum">收单行号：</string>
+    <string name="rec_tradetype">交易类型：</string>
+    <string name="rec_tradebatchnum">批次号：</string>
+    <string name="rec_tradeinquire">交易查询号：</string>
+    <string name="rec_tradetime">交易时间：</string>
+    <string name="rec_certificatenum">凭证号：</string>
+    <string name="rec_autho">授权码：</string>
+    <string name="rec_reference">参考号：</string>
+    <string name="rec_date">日期</string>
+    <string name="rec_time">时间</string>
+    <string name="rec_amount">金额</string>
+    
+    <string name="tenant_name">xxxxxxxxx</string>
+    <string name="tenant_no">xxxxxxxxxxxxx</string>
+    <string name="trade_type">xxxxxx</string>
+    <string name="trade_inqurenum">xxxxxxxxx</string>
+    <string name="clean_up_shopping_cart_positive">确 认</string>
+    <string name="clean_up_cancel_button">取 消 </string>
+    <string name="clean_up_all_shopcart">清空购物车</string>
+    <string name="goodskind">商品分类</string>
+    <string name="goodsattr">商品属性</string>
+    <string name="goodsonsale">商品优惠</string>
+    <string name="goodsmanager">"商品管理"</string>
+    <string name="usermanager">"用户管理"</string>
+    <string name="updateapk">程序更新</string>
+    <string name="settoperation">"&#160;&#160;设&#160;&#160;&#160;置&#160;&#160;"</string>
+    
+    <string name="select_date_and_time">请选择日期和时间</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    
+    <string name="product_name">商品名称</string>
+    <string name="sale_number">销售数量</string>
+    
+    <!-- NEW ADDED -->
+    
+    
+    
+    <string name="shop_manager">店长</string>
+    <string name="shop_assistant">店员</string>
+    
+    <string name="notpay">未支付</string>
+    <string name="alreadyrepeal">已撤销</string>
+    <string name="nocate">无分类</string>
+    
+    <string name="refund">冲正</string>
+    <string name="refund_fail">冲正失败</string>
+    <string name="refund_success">冲正成功</string>
+    
+    <string name="cancle_hangup">取消挂单</string>
+    <string name="not_confirm">确定中……</string>
+    <string name="alert_addcate_fail">添加或修改商品种类失败</string>
+    <string name="alert_addcate_success">添加或修改商品种类成功</string>
+    <string name="alert_addcate_notnull">添加商品种类名称不能为空</string>
+    
+    <string name="alert_addonsale_fail">添加或修改商品优惠失败。</string>
+    <string name="alert_addonsale_success">添加或修改商品优惠成功。</string>
+    <string name="alert_addonsale_wrong">优惠幅度格式错误。</string>
+    <string name="alert_addonsale_notnull">商品优惠不能为空。</string>
+    
+    <string name="alert_addgoods_fail">添加或修改商品失败.</string>
+    <string name="alert_addgoods_success">添加或修改商品成功.</string>
+    <string name="alert_addgoods_notnull">商品名和价格不能为空。</string>
+    
+    <string name="alert_adduser_success">添加或修改用户成功</string>
+    <string name="alert_adduser_fail">添加或修改用户失败</string>
+    <string name="alert_adduser_namenotnull">姓名不能为空。</string>
+    <string name="alert_adduser_accounteleven">用户名为11位手机号码。</string>
+	
+    <string name="alert_addattr_fail">添加或修改商品属性失败。</string>
+    <string name="alert_addattr_success">添加或修改商品属性成功。</string>
+    <string name="alert_addattr_notnull">商品属性名不能为空。</string>
+    <string name="alert_addattr_toomany">添加的子属性过多。</string>
+    <string name="alert_addattr_alreadyin">子属性名重复，添加失败！</string>
+    
+    <string name="receive_cash">收款</string>
+    <string name="change_cash">找零</string>
+    <string name="card_success">刷卡支付成功</string>
+   	<string name="yuan">元</string>
+   	<string name="period">。</string>
+   	<string name="consume_cash">现金消费</string>
+   	<string name="consume_other">其他消费</string>
+   	<string name="consume_card">刷卡消费</string>
+   	<string name="consume_total">销售总额</string>
+   	<string name="consume_count">交易数量</string>
+   	
+   	<string name="deal_Hangup_first">请先处理当前挂单</string>
+   	<string name="attr_factor">属性因子</string>
+   	<string name="price_factor">价格因子</string>
+   	<string name="save_attr">保存修改/保存新建</string>
+   	<string name="save_attr_dialog">确 定</string>
+   	
+   	<string name="sales_statistics">销售统计</string>
+   	<string name="order_remark">订单备注信息</string>
+   	<string name="input_order_remark">请输入订单备注信息</string>
+   	<string name="new_deal">新购物</string>
+	<string name="delete">删除</string>
+	<string name="big">大</string>
+	
+	<string name="save_onsale">保存修改/保存新建</string>
+	<string name="input_name">请输入名称</string>
+	<string name="input_price">请输入价格</string>
+	<string name="onsale_name">优惠名称</string>
+	<string name="input_price_float">请输入价格幅度</string>
+	<string name="price_float">价格幅度</string>
+	<string name="delete_onsale">删除此优惠</string>
+	<string name="delete_cate">删除此分类</string>
+	<string name="cate_name">分类名称</string>
+	
+	<string name="name">名称</string>
+	<string name="price">价格</string>
+	<string name="cate">分类</string>
+	<string name="add_product_attr">添加商品属性</string>
+	<string name="delete_product">删除此商品</string>
+	<string name="attr_name">属性名称</string>
+	<string name="input_attr_name">请输入属性名字</string>
+	<string name="single_select">单选</string>
+	<string name="multy_select">多选</string>
+	<string name="add_price_attr">添加</string>
+	<string name="price_attr">属性因子</string>
+	<string name="delete_attr">删除此属性</string>
+	<string name="save_cate">保存修改/保存新建</string>
+	<string name="save_product">保存修改/保存新建</string>
+	<string name="set_pic">设置图片</string>
+	<string name="back">&#160;&#160;返&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;回</string>
+	<string name="order_cancle_alert">该订单将要撤销，需返还顾客 </string>
+	<string name="order_cancle_success">订单撤销成功</string>
+	<string name="check_update">软件更新</string>
+	<string name="current_day">本日</string>
+	<string name="current_week">本周</string>
+	<string name="current_month">本月</string>
+	<string name="begin_time">开始日期</string>
+	<string name="end_time">结束日期</string>
+	<string name="change_account">更换账号</string>
+	<string name="lock_account">锁定</string>
+	<string name="delete_account">删除此用户</string>
+	<string name="property_set">权限设置</string>
+	<string name="acount_name">姓名</string>
+	<string name="acount_identity">证件号</string>
+	<string name="input_account_name">请输入姓名</string>
+	<string name="input_identity_name">请输入证件号</string>
+	<string name="input_phoneno">请输入11位手机号</string>
+	<string name="save_account">保存修改/新建用户</string>
+    
+    <string name="user_name_hint">姓名</string>
+    <string name="user_phone_hint">请输入手机号码</string>
+    
+    <string name="submit">提交</string>
+    <string name="band">绑定</string>
+    <string name="input_active_number_hint">输入验证码</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="ensure_password_hint">请确认密码</string>
+    
+    <string name="is_loading">正在处理，请稍等&#8230;</string>
+    
+    <string name="active_device">激活设备</string>
+    <string name="get_active_number">获得验证码</string>
+    <string name="active_number_hint">请输入验证码</string>
+    <string name="select_merchant">请选择商户</string>
+    <string name="select_tid">请选择机器</string>
+    <string name="merchant_name">商户名称</string>
+    <string name="merchant_id">编号</string>
+    <string name="terminal_name">终端编号</string>
+    <string name="serial_number">已绑定收银机编号</string>
+    <string name="download_secret_key">下载设备参数</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="administrator">管理员</string>
+    
+    <string name="phone_and_name_null">手机号和姓名都不能为空</string>
+    <string name="error_phone_type">手机号码格式错误，请检查后重试！</string>
+    <string name="network_error">网络异常，请检查网络后重试！</string>
+    <string name="hint">提示</string>
+    <string name="login_error">获取登录信息失败，请先安装并登录收银通，然后才能使用！</string>
+    <string name="active_number_null">请检查验证码是否正确！</string>
+    <string name="regain_active_number_hint"><xliff:g id="NUMBER">%1$2s</xliff:g>秒后重新获取</string>
+    <string name="regain_active_number">重新获得验证码</string>
+    <string name="psw_different">两次输入的密码不一样</string>
+    <string name="mid_is_null">您还没有注册商家信息，暂时无法激活设备，您可以在完成注册信息后重新激活。</string>
+
+
+    
+    <string name="order_reverse_alert">消费冲正处理，如已扣款会被抹账</string>
+    <string name="refund_reverse_alert">撤销冲正处理，会取消撤销操作</string>
+    <string name="order_reverse_inprocess">冲正进行中，请勿离开界面</string>
+    <string name="reverse_success">冲正处理成功</string>
+    <string name="reverse_salevoid_success">撤销冲正处理成功，请10分钟后再次撤单</string>
+    <string name="not_complete">未完成</string>
+    <string name="change_recover">重新交易</string>
+
+    <string name="tid_is_null">您还没有添加终端信息，暂时无法激活设备，您可以在完成注册信息后重新激活。</string>
+    <string name="band_tid_hint">即将绑定该设备到终端<xliff:g id="NUMBER">%1$2s</xliff:g>上，您确定绑定？</string>
+    <string name="change_band_tid_hint">即将覆盖终端<xliff:g id="NUMBER">%1$2s</xliff:g>上的设备，覆盖后原设备将不能使用，您确定覆盖？</string>
+
+    <string name="band_device_ok">绑定设备成功！</string>
+    <string name="change_band_ok">修改绑定设备成功！</string>
+    
+    <string name="change_password">修改密码</string>
+    <string name="get_active_number_first">请先获取验证码</string>
+    <string name="phone_number">用户名</string>
+    <string name="need_reverse">需冲正</string>
+    <string name="check_emv">是否为IC卡</string>
+    <string name="hava_emv">是</string>
+    <string name="nothave_emv">否</string>
+    <string name="login_in_error">登录失败</string>
+    <string name="is_editing_phone_hint">您正在修改手机号码，是否放弃此次修改？</string>
+    <string name="change_phone">修改手机号码</string>
+    <string name="original_phone">原手机号</string>
+    <string name="new_phone">新手机号</string>
+    <string name="check_account">账户验证</string>
+    <string name="phone_psw_error">手机号或密码输入错误，请检查后重试</string>
+    
+    <string name="re_login_for_active">您确定退出此账号，重新激活该设备？</string>
+    <string name="re_select_mid">您确定重新选择商户号？</string>
+    <string name="already_set_psw">已设置密码，请重新登录</string>
+    <string name="band_merchant_error">您的机器已经被注册过，无法重复注册，请联系客服。</string>
+    <string name="already_download_secret">您已经下载交易主密钥，是否确定要重新下载？</string>
+    <string name="contact_xunlian">请联系讯联。</string>
+    
+    <string name="have_not_active_device">设备还没有激活，请激活后重试！</string>
+	<string name="add_account">新建用户</string>
+	<string name="update_account">修改用户</string>
+	<string name="first_name">姓</string>
+	<string name="last_name">名</string>
+	<string name="first_name_hint">请输入姓氏</string>
+	<string name="last_name_hint">请输入名字</string>
+	<string name="verify_phone">验证手机号</string>
+    <string name="check_password">确认密码</string>
+    <string name="check_number">验证码</string>
+    <string name="ge">个</string>
+   
+    <string name="backup_version">当前的备份：</string>
+    <string name="backup_time">上次备份时间：</string>
+    <string name="checkout_backup">备份商品数据</string>
+    <string name="checkout_lead">导入商品数据</string>
+    <string name="merchant_message">商户信息</string>
+    <string name="copy_function">数据备份</string>
+    <string name="merchantnikename">商户昵称</string>
+    <string name="merchantaddress">门店地址</string>
+    <string name="merchant_MID">商户编号：</string>
+    <string name="merchant_TID">终端编号：</string>
+    <string name="merchant_address">商户地址：</string>
+    <string name="merchantcupid">CPU&#160;&#160;&#160;&#160;&#160;ID：</string>
+    <string name="checkout_version">当前的软件版本：</string>
+    <string name="checkout_time">上次更新时间：</string>
+    <string name="printer_pirnt">打印</string>
+    <string name="printer_save">保存</string>
+    <string name="sit_index">座位号</string>
+    <string name="delete_employee_success">删除成功</string>
+    <string name="checkupdate_message">未更新</string>
+    <string name="change_info">修改</string>
+    <string name="no_change_info">信息没有任何改动</string>
+    <string name="change_success">修改成功</string>
+    <string name="nick_name_cannot_null">昵称不能为空</string>
+    <string name="address_cannot_null">地址不能为空</string>
+    <string name="nickname_hint">请输入商户昵称</string>
+    <string name="address_hint">请输入门店地址</string>
+	
+    <string name="condition_prompt">输入正确的检索条件！</string>
+    <string name="baidukey_prompt">百度授权Key不正确！</string>
+    <string name="baiduinit_prompt">BMapManager  初始化错误！</string>
+    <string name="statechange_prompt">状态改变：ID:</string>
+    <string name="state_prompt"> STATE:</string>
+    <string name="swipefail_prompt">刷卡失败，请重刷</string>
+    <string name="passworderror_prompt">密码错误，请重新输入</string>
+    <string name="reversal_prompt">冲正返回码：</string>
+    <string name="exception_prompt">很抱歉,程序出现异常,即将退出。</string>
+    <string name="logfile_prompt">日志文件不存在！</string>
+    <string name="savedocsuccess_prompt">存档成功！</string>
+    <string name="savedocfail_prompt">存档失败！</string>
+    <string name="importsuccess_prompt">导入成功！</string>
+    <string name="importfail_prompt">未知错误，导入失败！</string>
+    <string name="importfail_file">文件未找到，导入失败！</string>
+    <string name="importfail_device">设备未找到，导入失败！</string>
+    <string name="exportsuccess_prompt">导出成功！</string>
+    <string name="exportfail_prompt">未知错误，导出失败！</string>
+    <string name="exportfail_file">文件未找到，导出失败！</string>
+    <string name="exportfail_device">设备未找到，导出失败！</string>
+    
+    <string name="swipe_card"> 刷卡</string>
+    <string name="trade_fail"> 交易失败 后台无响应。。。</string>
+    <string name="unknown_error"> 未知错误。。。</string>
+    <string name="trade_mac_error">MAC错误。。。</string>
+    <string name="trade_network_error">网络故障。。。</string>
+    <string name="icfail_trymsr">IC卡不可用，请刷磁条卡</string>
+    <string name="roll_back_msr">回滚到磁条卡交易,请输入密码</string>
+    <string name="emv_retry">请重新插入EMV卡。。。</string>
+    <string name="ic_deny">IC卡拒绝交易。。。</string>
+    <string name="donot_move_ic">交易完成前，勿拔出EMV卡。。。</string>
+    <string name="msr_retry">请重新刷MSR卡。。。</string>
+    <string name="emv_move_retry">请勿中途拔卡，请重新进行交易</string>
+    <string name="pass_word_retry">请重新输入密码。。。</string>
+    <string name="no_network_error">无网络连接，不能交易。。。</string>
+    <string name="trade_success">交易成功。。。</string>
+    <string name="reverse_fail">冲正失败，请手动处理。。.</string>
+    <string name="sign_in_process"> 正在签到中</string>
+    <string name="me_sale">销售</string>
+    <string name="me_salevoid">撤销</string>
+    <string name="me_refund">退货</string>
+    <string name="re_app">补打</string>
+    <string name="voidandrefund">撤销/退货</string>
+    <string name="sale_need_reverse">销售 需冲正</string>
+    <string name="void_need_reverse">撤销 需冲正</string>
+    <string name="remark">备注</string>
+    <string name="totalprice">合计</string>
+    <string name="p_cash">现金</string>
+    <string name="p_change">找零</string>
+    <string name="p_card">刷卡</string>
+    <string name="r_number">收据号</string>
+    <string name="cashier">收银员</string>
+    <string name="addinfo">补充</string>
+   	<string name="saddress">地址</string>
+   	
+   	<string name="p_name">名称</string>
+   	<string name="p_count">数量</string>
+   	<string name="p_price">单价</string>
+   	<string name="p_amount">金额</string>
+   	
+   	<string name="p_mname">商铺名称:</string>
+   	<string name="p_start_date">开始日期:</string>
+   	<string name="p_end_date">结束日期:</string>
+   	<string name="p_total_amount">销售总额:</string>
+   	<string name="p_cash_amount">现金消费:</string>
+   	<string name="p_card_amount">刷卡消费:</string>
+   	<string name="p_total_count">交易数量:</string>
+   	<string name="p_no_record">没有商品销售记录</string>
+   	
+   	<string name="reverse_fail_report">冲正失败报告单</string>
+   	<string name="sn">序列号:</string>
+   	<string name="authorization_code">授权码:</string>
+   	<string name="pr_amount">金额:</string>
+   	<string name="pr_card">卡号:</string>
+   	<string name="pr_time">时间:</string>
+   	
+   	<string name="term">项</string>
+   	
+   	<string name="year">年</string>
+   	<string name="month">月</string>
+   	<string name="day">日</string>
+   	<string name="hour">时</string>
+   	<string name="min">分</string>
+   	<string name="sec">秒</string>
+   	<string name="unkown">未知</string>
+    <string name="current_version">当前版本：</string>
+    <string name="neednot_update">，已是最新版,无需更新！</string>
+    <string name="update_title">软件更新</string>
+    <string name="findnew_prompt">，发现新版本：</string>
+    <string name="choose_update">，是否更新？</string>
+    <string name="downloading">正在下载</string>
+    <string name="notnow_update">暂不更新</string>
+    <string name="extra_add_price">0.00</string>
+	<string name="update_merchant_save">保存修改</string>
+	
+	<string name="band_mid">绑定商户编号</string>
+	<string name="band_tid">绑定设备编号</string>
+	<string name="is_down_secret_key_hint">正在下载交易主密钥1/3&#8230;</string>
+	<string name="is_down_ic_secret_key_hint">正在下载IC卡终端公钥2/3&#8230;</string>
+	<string name="is_down_ic_params_hint">正在下载IC卡终端参数3/3&#8230;</string>
+	<string name="prepare_down_secret_key_hint">即将开始下载交易参数，请确保您的机器在下载过程中保持网络畅通，是否现在开始下载？</string>
+	<string name="onsale_money">¥</string>
+	<string name="onsale_percent">%</string>
+	
+	<string name="selftest">设备检测</string>
+	<string name="self_re_check">重新检测</string>
+	<string name="self_in_process">设备正在检测中，请稍后！</string>
+	<string name="self_check_ok">设备检测正常，请放心使用！</string>
+	<string name="self_check_notok">设备发现异常请您及时处理！</string>
+	<string name="self_netlink">网络连接</string>
+	<string name="self_box">钱箱</string>
+	<string name="self_ic">IC卡模块</string>
+	<string name="self_hard_pin">硬密码键盘</string>
+	<string name="self_msr">磁条卡模块</string>
+	<string name="self_nfc">NFC模块</string>
+	<string name="self_soft_pin">软密码键盘</string>
+	<string name="self_printer">打印机</string>
+	
+	<string name="remark_message">备注</string>
+	<string name="down_secret_key_error">下载主密钥失败，请联系售后重新下载！</string>
+	<string name="pin_pad_connect_error">密码键盘连接错误，请检测后重试！</string>
+	<string name="psw_lenth_hint">密码长度为6&#8211;16位</string>
+	<string name="download_secret_success">下载交易参数成功！</string>
+	
+	<string name="not_store_account_phone">你的手机号还未注册！</string>
+	<string name="is_have_same_phone">你输入的手机号码已被注册！</string>
+	<string name="exceed_limit">超过限制</string>
+	<string name="emv_fail">IC卡交易失败</string>
+	<string name="switch_on">ON</string>
+    <string name="switch_off">OFF</string>
+   	<string name="attr_price_dialog_default">请输入价格</string>
+   	<string name="attr_attr_dialog_default">请输入属性</string>
+   	
+   	<string name="no_sale_info">没有销售记录</string>
+   	<string name="no_hand_up_info">没有挂单记录</string>
+   	
+   	<string name="download_complete">下载完成！</string>
+   	<string name="download_error">下载失败！</string>
+   	<string name="sdcard_error">sd卡错误</string>
+   	<string name="importfail_DBnotNull">导入功能适用于软件数据为空，请恢复软件出厂设置！</string>
+   	
+   	<string name="membership_system">&#160;&#160;会&#160;&#160;员&#160;&#160;卡&#160;&#160;</string>
+   	<string name="membership_manage">会员管理</string>
+   	<string name="membership_pay">会员卡充值</string>
+   	<string name="input_phone_or_name">输入手机号/姓名</string>
+   	<string name="phone">手机号</string>
+   	<string name="membership_card">会员卡</string>
+   	<string name="membership_total">总额</string>
+   	<string name="membership_name">会员名：<xliff:g id="NUMBER">%1$2s</xliff:g></string>
+   	<string name="membership_card_no">卡号：<xliff:g id="NUMBER">%1$2s</xliff:g></string>
+   	<string name="membership_phone_no">手机号：<xliff:g id="NUMBER">%1$2s</xliff:g></string>
+   	<string name="membership_card_balance">余额：<xliff:g id="NUMBER">%1$2s</xliff:g></string>
+   	<string name="delete_membership_card">删除此会员卡</string>
+   	<string name="membership_card_no1">卡号</string>
+   	<string name="membership_card_type">卡类型</string>
+   	<string name="membership_card_deadline">有效期</string>
+   	<string name="membership_card_rebate">折扣</string>
+   	<string name="membership_card_balance1">余额</string>
+   	<string name="membership_add_account">创建会员</string>
+   	<string name="membership_card_type_solid">实体卡</string>
+   	<string name="membership_card_add_hint">刷卡扫号/点击输入</string>
+   	
+	<string name="pay_error">支付错误！</string>
+	<string name="device_info">设备信息</string>
+	<string name="device_info_error">获取设备信息失败</string>
+	<string name="device_active_error">激活设备失败！</string>
+	
+	<string name="appChinaName">登录酷收银</string>
+	<string name="appEnglishName">KOOLCADH</string>
+	<string name="dataStatistics">数据统计</string>
+	<string name="shoppingPage">购物页面</string>
+	<string name="bindfail">绑定失败</string>
+	<string name="sale_statistic">销售统计</string>
+	<string name="leftBarAllRecord">全部记录</string>
+	<string name="leftBarHangUpRecord">挂单记录</string>
+	<string name="leftBarSaleRecord">销售记录</string>
+	<string name="settingChange">更改</string>
+	<string name="settingDelete">删除</string>
+	<string name="settingDownLoadDir">下载目录</string>
+	<string name="nowDirInUse">当前使用的商品目录为 ：</string>
+	<string name="trade_back">返回</string>
+	<string name="calender">日历</string>
+	<string name="user_exist">用户已存在</string>
+	<string name="passWd_length">密码个数长度为6</string>
+	<string name="not_pri">没有权限修改</string>
+	<string name="allow_delete">允许删除该用户吗</string>
+</resources>

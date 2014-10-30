@@ -1,0 +1,23 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+
+	<TextView
+		android:id="@+id/textGroup1"
+ 		android:layout_width="wrap_content"
+		android:layout_height="40dp"
+		android:gravity="center_vertical"
+		android:textSize="20sp"
+		android:layout_marginLeft="30dp"
+		android:textIsSelectable="true" />
+
+	<ImageView
+	    android:id="@+id/imageGroup1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="40dp"
+ 		android:layout_alignParentRight="true"
+	    android:gravity="center_vertical"
+	    android:contentDescription="@string/canceldiscount" />
+</RelativeLayout>

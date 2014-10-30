@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="82dp">
+
+
+   <TextView
+       android:id="@+id/attr_name" 
+       android:textColor="@color/text_normal_color"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:gravity="center|left"
+       android:layout_alignParentTop="true"
+       android:layout_marginRight="22dp"
+       android:layout_alignParentLeft="true"
+       android:textSize="20sp"
+       android:singleLine="true"/>
+
+   <Button
+       android:id="@+id/attr_remove"
+       android:layout_width="70dp"
+       android:layout_height="40dp"
+       android:textColor="@color/text_normal_color"
+	   android:layout_centerVertical="true"
+       android:layout_marginRight="20dp"
+       android:layout_alignParentRight="true"
+       android:text="删除"
+       android:textSize="22sp" />
+   
+   <TextView
+       android:id="@+id/attr_price_effect" 
+	   android:textColor="@color/text_normal_color"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:gravity="center|bottom"
+       android:layout_alignParentTop="true"
+       android:layout_marginRight="20dp"
+       android:layout_toLeftOf="@+id/attr_remove"
+       android:textSize="20sp"
+       android:singleLine="true"/>
+
+</RelativeLayout>

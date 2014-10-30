@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_in"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/repeat_bg">
+    
+	<com.koolyun.mis.widget.LoginHelpBar
+	    android:id="@+id/help_bar"
+	    android:layout_alignParentTop="true"
+	    android:layout_centerHorizontal="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="188dp" />
+
+	<!-- <ViewFlipper  
+        android:id="@+id/user_view_flipper"
+        android:layout_width="@dimen/log_srcoll_width"
+        android:layout_height="260dp"
+        android:layout_below="@+id/help_bar"
+        android:layout_marginTop="20dp"
+        android:layout_alignRight="@id/help_bar"
+        android:background="#00000000" >
+          <include layout="@layout/user_selector" />
+          <include layout="@layout/user_input" />
+          <include layout="@layout/input_phone_and_active_number_2" />
+          <include layout="@layout/password_2" />"
+    </ViewFlipper>  -->
+    <RelativeLayout
+        android:id="@+id/fragmentLayout"
+        android:layout_width="@dimen/log_srcoll_width"
+        android:layout_height="260dp"
+        android:layout_below="@+id/help_bar"
+        android:layout_marginTop="20dp"
+        android:layout_alignRight="@id/help_bar"
+    	android:background="#00000000">
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/have_not_active_device"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/have_not_active_device"
+        android:textColor="@color/text_normal_color"
+        android:textSize="30sp"
+        android:visibility="gone"
+        />
+</RelativeLayout>

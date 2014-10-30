@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:background="@drawable/attribute_bg">
+     
+     
+     <EditText
+         android:id="@+id/attr_dialog_edittext"
+         android:layout_width="300dp"
+         android:layout_height="50dp"
+         android:layout_marginTop="45dp"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="60dp"
+         android:inputType="text"
+         android:imeOptions="actionDone"
+         android:singleLine="true"
+         android:maxLength="16"
+         android:paddingLeft="10dp"
+         android:hint="@string/attr_attr_dialog_default"
+         android:background="@drawable/editshape"
+         style="@style/input_style" />
+
+     <TextView
+         android:id="@+id/attr_dialog_textview"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft= "true"
+         android:layout_marginLeft="55dp"
+         android:layout_alignBaseline="@id/attr_dialog_edittext"
+         android:layout_alignBottom="@id/attr_dialog_edittext"
+         android:text="@string/price_attr"
+         android:textSize="25sp"
+         android:textColor="@android:color/black" />
+     
+     <EditText
+         android:id="@+id/price_dialog_edittext"
+         android:layout_width="300dp"
+         android:layout_height="50dp"
+         android:layout_marginTop="20dp"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="60dp"
+         android:layout_below="@id/attr_dialog_edittext"
+         android:inputType="numberSigned|numberDecimal"
+         android:imeOptions="actionDone"
+         android:singleLine="true"
+         android:maxLength="4"
+         android:paddingLeft="10dp"
+         android:background="@drawable/editshape"
+         android:hint="@string/attr_price_dialog_default"
+         style="@style/input_style" />
+     
+     <TextView
+         android:id="@+id/price_dialog_textview"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft= "true"
+         android:layout_marginLeft="55dp"
+         android:layout_alignBaseline="@id/price_dialog_edittext"
+         android:layout_alignBottom="@id/price_dialog_edittext"
+         android:text="@string/price_factor"
+         android:textSize="25sp"
+         android:textColor="@android:color/black" />
+     
+     <Button
+        android:id="@+id/attr_dialog_save_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/price_dialog_edittext"
+        android:layout_alignLeft="@id/price_dialog_textview"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_below="@id/price_dialog_textview"
+        android:background="@drawable/button_roundconer_selector"
+        android:textColor="@android:color/black"
+        android:text="@string/save_attr_dialog"
+        android:textSize="30sp"/>
+     
+</RelativeLayout>

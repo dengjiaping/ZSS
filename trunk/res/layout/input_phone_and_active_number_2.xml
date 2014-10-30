@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        />
+    
+    <!-- <RelativeLayout
+	    android:id="@+id/login_bar1"
+        android:layout_marginTop="188dp"
+	    android:layout_width="@dimen/login_help_bar_width"
+	   	android:layout_height="@dimen/login_help_bar_height"
+	   	android:layout_centerHorizontal="true"
+	   	>
+   		<Button 
+   		    android:id="@+id/login_bak1"
+   		    android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:visibility="invisible"
+    		android:layout_alignParentLeft="true"
+    		android:background="@drawable/login_back"/>
+   			
+    	<TextView 
+    	    android:id="@+id/left_text"
+	        android:text="@string/app_name"
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+	        android:textColor="@color/text_normal_color"
+	        android:textSize="30sp"
+	        android:layout_toRightOf="@id/login_bak1"
+	        android:layout_marginLeft="21dp"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginBottom="10dp"/>
+	    
+	    <TextView 
+	        android:id="@+id/right_text"
+	        android:text="@string/change_password"
+    	    android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+	        android:textColor="@color/text_normal_color"
+	        android:textSize="18sp"
+	        android:layout_alignParentRight="true" 
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignBaseline="@id/left_text"/>
+
+	    <ImageView 
+	        android:layout_width="@dimen/log_srcoll_width"
+    		android:layout_height="1px"
+    		android:layout_alignParentBottom="true"
+    		android:layout_alignParentRight="true"
+    		android:layout_marginBottom="10dp"
+	        android:background="@color/bar_normal_color"/>
+		      	
+	</RelativeLayout> -->
+	<RelativeLayout
+        android:layout_width="@dimen/log_srcoll_width"
+        android:layout_height="wrap_content"
+        >
+	    <EditText 
+	        android:id="@+id/userPhoneEditText11"
+	        android:layout_width = "750dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginTop="20dp"
+	        android:padding="0dp"
+	        android:background="@drawable/text_enter_xml"
+	        android:drawableLeft="@drawable/login_left_phone_selector"
+	        android:hint="@string/user_phone_hint"
+	        android:maxLines="1"
+	        android:drawablePadding="12dp"
+	        android:singleLine="true"
+	        android:maxLength="20"
+	        android:inputType="number"
+	        android:textColor="@color/text_normal_color"
+	        android:imeOptions="actionDone"
+	        android:textSize="28sp"
+	        style="@style/input_style"/>
+	    <EditText 
+	        android:id="@+id/activeNumberEditText11"
+	        android:layout_width = "497dp"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/userPhoneEditText11"
+	        android:padding="0dp"
+	        android:background="@drawable/text_enter_xml"
+	        android:drawableLeft="@drawable/login_left_phone_selector"
+	        android:hint="@string/active_number_hint"
+	        android:maxLines="1"
+	        android:drawablePadding="12dp"
+	        android:singleLine="true"
+	        android:maxLength="20"
+       		android:inputType="number"
+	        android:textColor="@color/text_normal_color"
+	        android:layout_marginTop="20dp"
+	        android:imeOptions="actionDone"
+	        android:textSize="28sp"
+	        style="@style/input_style"/>
+	    <Button
+	        android:id="@+id/getActiveNumberButton11"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/get_active_number"
+	        android:layout_toRightOf="@id/activeNumberEditText11"
+	        android:layout_alignTop="@id/activeNumberEditText11"
+	        android:textSize="28sp"
+	        android:textColor="@color/text_normal_color"
+	        android:background="@drawable/button_roundconer_selector"
+	        android:layout_marginLeft="20dp"
+	        />
+	    <TextView
+	        android:id="@+id/regainActiveNumberText11"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_toRightOf="@id/activeNumberEditText11"
+	        android:layout_alignTop="@id/activeNumberEditText11"
+	        android:layout_alignBottom="@id/activeNumberEditText11"
+	        android:textSize="24sp"
+	        android:textColor="@color/blue_text"
+	        android:text="@string/regain_active_number_hint"
+	        android:visibility="gone"
+	        />
+	    <Button 
+	        android:id="@+id/sureButton1"
+	        android:layout_width = "697dp"
+	        android:layout_height="60dp"
+	        android:layout_marginTop="30dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@+id/activeNumberEditText11"
+	        android:background="@drawable/btn_bg_xml"
+	        android:textSize="30sp"
+	        android:textColor="#fff"
+	        android:text="@string/sure"
+	        android:layout_centerHorizontal="true"
+	        android:shadowColor="#000"
+	        android:shadowDy="1"
+	        android:shadowRadius="1"/>
+    </RelativeLayout>
+
+</RelativeLayout>

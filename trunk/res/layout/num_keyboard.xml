@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="808dp"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/imageButton1"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/en_key_margen_top"
+        android:background="@drawable/input_btn_xml"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="1"
+        android:textColor="@color/text_normal_color"
+        android:textSize="@dimen/en_key_size" />
+
+    <Button
+        android:id="@+id/imageButton2"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="@dimen/en_key_margen_top"
+        android:layout_toRightOf="@+id/imageButton1"
+        android:background="@drawable/input_btn_xml"
+        android:padding="0dp"
+        android:text="2"
+        android:textColor="@color/text_normal_color"
+        android:textSize="@dimen/en_key_size" />
+
+    <Button
+        android:id="@+id/imageButton3"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="@dimen/en_key_margen_top"
+        android:layout_toRightOf="@+id/imageButton2"
+        android:background="@drawable/input_btn_xml"
+        android:padding="0dp"
+        android:text="3"
+        android:textColor="@color/text_normal_color"
+        android:textSize="@dimen/en_key_size" />
+
+    <Button
+        android:id="@+id/imageButton4"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/imageButton1"
+        android:layout_below="@+id/imageButton1"
+        android:layout_marginTop="@dimen/en_key_margen_top"
+        android:background="@drawable/input_btn_xml"
+        android:padding="0dp"
+        android:text="4"
+        android:textColor="@color/text_normal_color"
+        android:textSize="@dimen/en_key_size" />
+
+    <Button
+        android:id="@+id/imageButton5"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/imageButton2"
+        android:layout_below="@+id/imageButton2"
+        android:layout_marginTop="@dimen/en_key_margen_top"
+        android:background="@drawable/input_btn_xml"
+        android:padding="0dp"
+        android:text="5"
+        android:textColor="@color/text_normal_color"
+        android:textSize="@dimen/en_key_size" />
+
+    <Button
+        android:id="@+id/imageButton6"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/imageButton3"
+        android:layout_below="@+id/imageButton3"
+        android:layout_marginTop="@dimen/en_key_margen_top"
+        android:background="@drawable/input_btn_xml"
+        android:padding="0dp"
+        android:text="6"
+        android:textColor="@color/text_normal_color"
+        android:textSize="@dimen/en_key_size" />
+
+    <Button
+        android:id="@+id/imageButton7"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/imageButton1"
+        android:layout_below="@+id/imageButton4"
+        android:layout_marginTop="@dimen/en_key_margen_top"
+        android:background="@drawable/input_btn_xml"
+        android:padding="0dp"
+        android:text="7"
+        android:textColor="@color/text_normal_color"
+        android:textSize="@dimen/en_key_size" />
+
+    <Button
+        android:id="@+id/imageButton8"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/imageButton2"
+        android:layout_below="@+id/imageButton5"
+        android:layout_marginTop="@dimen/en_key_margen_top"
+        android:background="@drawable/input_btn_xml"
+        android:padding="0dp"
+        android:text="8"
+        android:textColor="@color/text_normal_color"
+        android:textSize="@dimen/en_key_size" />
+
+    <Button
+        android:id="@+id/imageButton9"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/imageButton3"
+        android:layout_below="@+id/imageButton6"
+        android:layout_marginTop="@dimen/en_key_margen_top"
+        android:background="@drawable/input_btn_xml"
+        android:padding="0dp"
+        android:text="9"
+        android:textColor="@color/text_normal_color"
+        android:textSize="@dimen/en_key_size" />
+
+    <Button
+        android:id="@+id/imageButtonBack"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/imageButton6"
+        android:layout_marginLeft="21dp"
+        android:layout_toRightOf="@+id/imageButton3"
+        android:background="@drawable/input_btn_xml"
+        android:drawableLeft="@drawable/del36"
+		android:paddingLeft="60dp"
+/>
+
+    <Button
+        android:id="@+id/imageButtonConfirm"
+        android:layout_width="160dp"
+        android:layout_height="214dp"
+        android:layout_alignBottom="@+id/imageButton9"
+        android:layout_alignLeft="@+id/imageButtonBack"
+        android:layout_alignTop="@+id/imageButton6"
+        android:background="@drawable/input_green_btn_xml"
+        android:padding="0dp"
+        android:shadowColor="#000"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="@string/accounts"
+        android:textColor="#fff"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/Button00"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/imageButton8"
+        android:layout_below="@+id/imageButtonConfirm"
+        android:layout_marginTop="@dimen/en_key_margen_top"
+        android:background="@drawable/input_btn_xml"
+        android:text="00"
+        android:gravity="center_vertical|right"
+        android:paddingRight="20dp"
+        android:textColor="@color/text_normal_color"
+        android:textSize="@dimen/en_key_size" />
+
+   <Button
+        android:id="@+id/imageButton0"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/imageButton9"
+        android:layout_alignTop="@+id/Button00"
+        android:layout_alignLeft="@+id/imageButton3"
+        android:background="@drawable/input_btn_xml"
+        android:padding="0dp"
+        android:text="0"
+        android:textColor="@color/text_normal_color"
+        android:textSize="@dimen/en_key_size" />
+   
+   <Button
+        android:id="@+id/ButtonDown"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/imageButtonConfirm"
+        android:layout_alignTop="@+id/Button00"
+        android:background="@drawable/input_btn_xml"
+        android:drawableLeft="@drawable/hide_keyboard"
+        android:paddingLeft="60dp"
+        android:paddingTop="25dp" />
+
+</RelativeLayout>

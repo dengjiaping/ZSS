@@ -1,0 +1,24 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <ListView
+        android:id="@+id/settingUserManagerListView"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:cacheColorHint="#00000000" />
+       
+<!--     <Button -->
+<!--         android:id="@+id/settingAddUserBtn" -->
+<!--         android:layout_width="273dp" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:text="新增用户" -->
+<!--         android:background="@drawable/sale_button" -->
+<!--         android:layout_alignRight="@id/settingUserManagerListView" -->
+<!--         android:layout_below="@id/settingUserManagerListView"/> -->
+ 
+    
+ </RelativeLayout> 

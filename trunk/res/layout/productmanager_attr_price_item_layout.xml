@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:gravity="center" >
+ 	<ImageView 
+ 	    android:id="@+id/image_bg_sub"
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_height="fill_parent"
+ 	    android:background="#5fceea"
+ 	    android:contentDescription="@string/unkown" />
+ 	<Button
+ 	    android:id="@+id/prdmg_att_price_listdeletbtn"
+ 	    android:layout_width="50dp"
+ 	    android:layout_height="50dp"
+ 	    android:paddingLeft="15dp"
+ 	    android:layout_marginRight="10dp"
+ 	    android:drawableLeft="@drawable/trash"
+ 	    android:background="@drawable/attr_listview_xml"
+ 	    android:layout_centerVertical="true"
+ 	    android:focusable="false"
+ 	    android:layout_alignParentRight="true" />
+	
+ 	<TextView
+ 	    android:id="@+id/prdmg_attr_price_list_textview"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_alignParentLeft="true"
+ 	    android:maxLines="2"
+ 	    android:maxWidth="160dp"
+ 	    android:layout_marginLeft="26dp"
+ 	    android:layout_centerVertical="true"
+ 	    android:text="@string/big"
+ 	    android:textSize="20sp" />
+
+ 	<TextView
+ 	    android:id="@+id/prdmg_attr_price_list_price"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_toLeftOf="@+id/prdmg_att_price_listdeletbtn"
+ 	    android:layout_centerVertical="true"
+ 	    android:layout_marginRight="40dp"
+ 	    android:maxLength="4"
+ 	    android:text="@string/extra_add_price"
+ 	    android:textSize="20sp" />
+
+</RelativeLayout>

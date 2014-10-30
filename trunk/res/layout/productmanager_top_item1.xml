@@ -1,0 +1,24 @@
+<RelativeLayout
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+         <Button
+            android:id="@+id/productmanager_add_goods_kinds"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="40dp"
+            android:background="@drawable/name_add_xml" />
+                <TextView
+            android:id="@+id/product_first_summary"
+            android:layout_width="610dp"
+            android:layout_height="wrap_content"
+            android:maxWidth="610dp"
+            android:maxLines="2"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/productmanager_add_goods_kinds"
+            android:text="@string/goodskind"
+            android:textSize="30sp" />
+    </RelativeLayout> 

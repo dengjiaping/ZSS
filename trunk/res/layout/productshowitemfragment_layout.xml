@@ -1,0 +1,26 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/catalog_bg" >
+  
+    <!--  
+     <ViewFlipper
+        android:id="@+id/pdtmg_item_top_viewflipper"
+        android:layout_width="fill_parent"
+        android:layout_height="95dp"
+        android:flipInterval="200"
+        android:persistentDrawingCache="animation" >
+        <include layout="@layout/productmanageritem_top1" />
+        <include layout="@layout/productmanageritem_top2" />
+    </ViewFlipper>
+     android:layout_below="@+id/pdtmg_item_top_viewflipper"
+  -->  
+     <FrameLayout
+         android:id="@+id/pdtmg_item_container"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent" >
+         
+     </FrameLayout>
+ 
+</RelativeLayout> 

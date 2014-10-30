@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/prdmg_good_viewflipper"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/catalog_bg"
+    android:padding="0dp" >
+
+    <RelativeLayout
+        android:id="@+id/shopping_cat_total_money"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/shopping_navgate_bg"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btn_product_save"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shopping_cart_money_bg"
+            android:gravity="center"
+            android:text="确定保存"
+            android:textColor="@color/v2_navagate_title_bg"
+            android:textSize="26sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_delete_product"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/red"
+        android:textSize="26sp"
+        android:background="@drawable/product_delete_btn_selecter"
+        android:text="删除此商品" />
+
+    <ScrollView
+        android:id="@+id/sv_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/btn_delete_product"
+        android:layout_below="@id/shopping_cat_total_money" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/prdmg_goods_productname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/name"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/prdmg_goods_producteditinputname"
+                    style="@style/input_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/prdmg_goods_productname"
+                    android:background="@drawable/input_bg"
+                    android:hint="@string/input_name"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLength="@integer/product_name_limit_length"
+                    android:paddingLeft="10dp"
+                    android:textSize="20sp" >
+
+                    <requestFocus />
+                </EditText>
+            </RelativeLayout>
+	<TextView 
+	     android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/shape_shopping_cart_line"
+	    />
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                 
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/prdmg_goods_productprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                     android:layout_marginRight="10dp"
+                     android:layout_marginLeft="10dp"
+                    android:text="@string/price"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/prdmg_goods_producteditinputprice"
+                    style="@style/input_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/prdmg_goods_productprice"
+                    android:background="@drawable/input_bg"
+                    android:hint="@string/input_price"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:maxLength="@integer/price_limit_length"
+                    android:paddingLeft="10dp"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+<TextView 
+	     android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/shape_shopping_cart_line"
+	    />
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                 
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/prdmg_goods_product_cate_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                     android:layout_marginRight="10dp"
+                      android:layout_marginLeft="10dp"
+                    android:text="@string/cate"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/btn_prdmg_goods_product_cate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/prdmg_goods_product_cate_1"
+                    android:background="@drawable/input_bg"
+                    android:text="@string/cate"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+<TextView 
+	     android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/shape_shopping_cart_line"
+	    />
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/iv_prdmg_goods_product_cate_attr_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                     android:layout_marginRight="15dp"
+                      android:layout_marginLeft="15dp"
+                    android:src="@drawable/product_attr_add"
+                    android:text="@string/cate"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/btn_prdmg_goods_product_attr_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_prdmg_goods_product_cate_attr_add"
+                    android:text="@string/add_product_attr"
+                    android:layout_marginRight="10dp"
+                     android:background="@drawable/input_bg"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

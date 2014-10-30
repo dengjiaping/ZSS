@@ -1,0 +1,16 @@
+<RelativeLayout
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    <ViewFlipper  
+        android:id="@+id/prodcutmanagerViewFlipper"
+        android:layout_width="fill_parent"
+        android:layout_height="95dp"
+        android:background="@drawable/catalog_top" >
+          <include layout="@layout/productmanager_top_item1" />
+          <include layout="@layout/productmanager_top_item2" />
+          <include layout="@layout/productmanager_top_item3" />
+          <include layout="@layout/productmanager_top_item4" />
+    </ViewFlipper> 
+ 
+    </RelativeLayout> 

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/productactivity"
+        android:background="@drawable/repeat_bg">
+<!--  
+ 		<include layout="@layout/list_top" />
+      -->
+      
+      <!--  
+      <fragment android:name="com.cynovo.sirius.ui.fragment.ProductManagerFragment"
+        android:id="@+id/productManagerFragment"
+        android:layout_width="770dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_height="fill_parent" />
+       
+      <fragment android:name="com.cynovo.sirius.ui.fragment.ProductShowItemFragment"
+        android:id="@+id/productShowItemFragment"
+        android:layout_toRightOf="@id/productManagerFragment"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="18dp"
+        android:layout_width="470dp"
+        android:layout_height="fill_parent" />
+      
+     -->
+      
+    
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="95dp"
+    android:background="@drawable/catalog_top" >
+    
+    <com.koolyun.mis.widget.MoneyView
+        android:id="@+id/moneyInputView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textColorHint="@color/text_normal_color"
+        android:textColor="@color/text_normal_color"
+        android:drawableLeft="@drawable/manual"
+        android:text="@string/manual_input"
+        android:drawablePadding="20dp"
+        android:gravity="center|right"
+        android:paddingRight="20dp"
+        android:textSize="30sp" />
+        
+</RelativeLayout> 

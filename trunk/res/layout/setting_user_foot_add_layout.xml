@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="100dp"
+	android:gravity="center_vertical">
+ 	
+     <Button
+        android:id="@+id/settingAddUserBtn"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:text="新增用户"
+        android:background="@drawable/button_comm_selector_xml"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"/>
+</RelativeLayout>

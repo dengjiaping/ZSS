@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Kivvi</string>
+    
+   	<string name="user_name"></string>
+   	<string name="select_user">Select Account</string>
+    <string name="user_login_in">Login</string>
+    <string name="apply_for">Apply</string>
+    <string name="help_center">Support</string>
+    
+    <string name="login_in">Login</string>
+    
+    <string name="resent_sale">Report</string>
+    <string name="admin_setting">Control Panel</string>
+    
+    <string name="user_hint">User</string>
+    <string name="pass_hint">Password</string>
+    
+    <string name="info_input_cash">Cash</string>
+    <string name="info_input_card">Credit</string>
+    
+    <string name="settlement">Charge</string>
+    
+    <string name="sign_delete">Clear</string>
+    <string name="sign_ok">Done</string>
+    <string name="input_pass">Enter Password</string>
+    
+    <string name="sign_cancel">Retry</string>
+    <string name="sign_confirm">Done</string>
+    
+    <string name="sign_alert_info">I agree to pay the above total amount according to my card ending in</string>
+    <string name="sent_trade_info">Transaction complete, need a recept?</string>
+    
+    <string name="send_info">Send</string>
+    <string name="during_send_info">Sending</string>
+    <string name="send_info_success">Success</string>
+    <string name="send_info_fail">Fail</string>
+    
+    <string name="input_phone_number">Phone No.</string>
+    <string name="input_email_address">Email</string>
+    <string name="print_receipt">Print</string>
+    <string name="discountname">All Discounts</string>
+    <string name="allname">All items</string>
+    <string name="accounts">Charge</string>
+    <string name="hangup">Pending</string>
+    
+    <string name="product_list">Item List</string>
+    <string name="manual_input">Keyboard</string>
+    <string name="canceldiscount">Cancel</string>
+    <string name="shopping_car">Shopping Cart</string>
+    <string name="clear_shopping_car">Empty Shopping Cart</string>
+
+    <string name="privilege">Discount</string>
+    
+    <string name="send_orderinfo">Send Data</string>
+    <string name="revocation_order">Void</string>
+    <string name="recover_order">Resume</string>
+    
+    <string name="order_detail">Detail</string>
+    <string name="lookup_bills">Check Bill</string>
+    
+    <string name="imageviewtext"></string>
+
+    <string name="control_panel">Control Panel</string>
+    <string name="pause_deal">Pending Records</string>
+    <string name="not_sync">Nonsynchronous</string>
+    <string name="last_record">Recent Records</string>
+    <string name="all_record">All Records</string>
+    <string name="username">User Name</string>
+    <string name="input_password">Password</string>
+    <string name="click_unlock">Click to Unlock</string>
+    
+     <string name="rec_merchantname">Merchant:</string>
+    <string name="rec_merchantid">Merchant No.:</string>
+    <string name="rec_terminal">Terminal No.:</string>
+    <string name="rec_opmanno">Operator No.:</string>
+    <string name="rec_issuer">Issuer No.:</string>
+    <string name="rec_cardnum">Card No.:</string>
+    <string name="rec_cardexpration">Exp Date:</string>
+    <string name="rec_cardlinenum">Acquirer No.:</string>
+    <string name="rec_tradetype">Trans Type:</string>
+    <string name="rec_tradebatchnum">Batch No.:</string>
+    <string name="rec_tradeinquire">Trace No.:</string>
+    <string name="rec_tradetime">Date/Time:</string>
+    <string name="rec_certificatenum">Voucher No.:</string>
+    <string name="rec_autho">Authorization No.:</string>
+    <string name="rec_reference">Reference No.:</string>
+    <string name="rec_date">Date</string>
+    <string name="rec_time">Time</string>
+    <string name="rec_amount">Amount</string>
+    
+    <string name="tenant_name">xxxxxxxxx</string>
+    <string name="tenant_no">xxxxxxxxxxxxx</string>
+    <string name="trade_type">xxxxxx</string>
+    <string name="trade_inqurenum">xxxxxxxxx</string>
+    <string name="clean_up_shopping_cart_positive">Remove</string>
+    <string name="clean_up_cancel_button">Cancel</string>
+    <string name="clean_up_all_shopcart">Empty Shopping Cart</string>
+    <string name="goodskind">Category</string>
+    <string name="goodsattr">Attribute</string>
+    <string name="goodsonsale">Discount</string>
+    <string name="goodsmanager">&#160;&#160;Edit Item</string>
+    <string name="usermanager">&#160;&#160;User Account</string>
+    <string name="updateapk">Update</string>
+    <string name="settoperation">&#160;&#160;Setting</string>
+    
+    <string name="select_date_and_time">Select Date and Time</string>
+    <string name="sure">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="product_name">Name</string>
+    <string name="sale_number">Sales(RMB)</string>
+    
+    <!-- NEW ADDED -->
+
+    <string name="shop_manager">Manager</string>
+    <string name="shop_assistant">Employee</string>
+    
+    <string name="notpay">Unpaid</string>
+    <string name="alreadyrepeal">Void Already</string>
+    <string name="nocate">Others</string>
+    
+    <string name="refund">Reverse</string>
+    <string name="refund_fail">Reverse Failed</string>
+    <string name="refund_success">Reverse Success</string>
+    
+    <string name="cancle_hangup">Remove</string>
+    <string name="not_confirm">Confirming…</string>
+    <string name="alert_addcate_fail">Failed</string>
+    <string name="alert_addcate_success">Success</string>
+    <string name="alert_addcate_notnull">Category cannot be void</string>
+    
+    <string name="alert_addonsale_fail">Failed</string>
+    <string name="alert_addonsale_success">Success</string>
+    <string name="alert_addonsale_wrong">Onsale formate is woring</string>
+    <string name="alert_addonsale_notnull">Onsale cannot be void</string>
+    
+    <string name="alert_addgoods_fail">Failed.</string>
+    <string name="alert_addgoods_success">Success.</string>
+    <string name="alert_addgoods_notnull">Name and price cannot be void</string>
+    
+    <string name="alert_adduser_success">Success</string>
+    <string name="alert_adduser_fail">Failed</string>
+    <string name="alert_adduser_namenotnull">Name cannot be void</string>
+    <string name="alert_adduser_accounteleven">The Username is cellphone No.</string>
+	
+    <string name="alert_addattr_fail">Failed</string>
+    <string name="alert_addattr_success">Success</string>
+    <string name="alert_addattr_notnull">Attribute cannot be void</string>
+    <string name="alert_addattr_toomany">Attribute options beyond limit</string>
+    <string name="alert_addattr_alreadyin">Failed, name is occpuied</string>
+    
+    <string name="receive_cash">Received&#160;</string>
+    <string name="change_cash">&#160;Change is&#160;</string>
+    <string name="card_success">Transaction Success</string>
+   	<string name="yuan">&#160;RMB</string>
+   	<string name="period">.</string>
+   	<string name="consume_cash">Cash</string>
+   	<string name="consume_other">Others</string>
+   	<string name="consume_card">Credit Card</string>
+   	<string name="consume_total">Total Sales</string>
+   	<string name="consume_count">Transactions</string>
+   	
+   	<string name="deal_Hangup_first">Pending is Occpuied</string>
+   	<string name="attr_factor">Property</string>
+   	<string name="price_factor">Price</string>
+   	<string name="save_attr">Save</string>
+   	<string name="save_attr_dialog">Confirm</string>
+   	
+   	<string name="sales_statistics">Statistics</string>
+   	<string name="order_remark">Notes</string>
+   	<string name="input_order_remark"></string>
+   	<string name="new_deal">New</string>
+	<string name="delete">Remove</string>
+	<string name="big">Big</string>
+	
+	<string name="save_onsale">Save</string>
+	<string name="input_name">Name</string>
+	<string name="input_price">Price</string>
+	<string name="onsale_name">Name</string>
+	<string name="input_price_float">Price Range</string>
+	<string name="price_float">Discount</string>
+	<string name="delete_onsale">Remove</string>
+	<string name="delete_cate">Remove</string>
+	<string name="cate_name">Category</string>
+	
+	<string name="name">Name</string>
+	<string name="price">Price</string>
+	<string name="cate">Category</string>
+	<string name="add_product_attr">Attribute</string>
+	<string name="delete_product">Remove</string>
+	<string name="attr_name">Name</string>
+	<string name="input_attr_name">name</string>
+	<string name="single_select">Single</string>
+	<string name="multy_select">Multiple</string>
+	<string name="add_price_attr">Add</string>
+	<string name="price_attr">Property</string>
+	<string name="delete_attr">Remove</string>
+	<string name="save_cate">Save</string>
+	<string name="save_product">Save</string>
+	<string name="set_pic">Photo</string>
+	<string name="back">&#160;&#160;Back</string>
+	<string name="order_cancle_alert">The order will be cancled</string>
+	<string name="order_cancle_success">Order Cancellation Success</string>
+	<string name="check_update">Update</string>
+	<string name="current_day">Today</string>
+	<string name="current_week">This Week</string>
+	<string name="current_month">This Month</string>
+	<string name="begin_time">From</string>
+	<string name="end_time">To</string>
+	<string name="change_account">Change Account</string>
+	<string name="lock_account">Lock</string>
+	<string name="delete_account">Remove</string>
+	<string name="property_set">Permission</string>
+	<string name="acount_name">Name</string>
+	<string name="acount_identity">identity</string>
+	<string name="input_account_name">Name</string>
+	<string name="input_identity_name">identity</string>
+	<string name="input_phoneno">Phone No.</string>
+	<string name="save_account">Save</string>
+    
+    <string name="user_name_hint">Name</string>
+    <string name="user_phone_hint">Cell-phone No.</string>
+    
+    <string name="submit">Submit</string>
+    <string name="band">Banding</string>
+    <string name="input_active_number_hint">Pin No.</string>
+    <string name="password_hint">Enter Password</string>
+    <string name="ensure_password_hint">Confirm</string>
+    
+    <string name="is_loading">Processing&#8230;</string>
+    
+    <string name="active_device">Activate</string>
+    <string name="get_active_number">Acquire</string>
+    <string name="active_number_hint">Verification Code</string>
+    <string name="select_merchant">Select Merchant</string>
+    <string name="select_tid">Select Device</string>
+    <string name="merchant_name">Merchant</string>
+
+    <string name="merchant_id">Merchant ID</string>
+    <string name="terminal_name">Terminal ID</string> 
+    <string name="sn">Serial No.</string>
+    <string name="download_secret_key">Download Parameters</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="administrator">Administrator</string>
+    
+    <string name="phone_and_name_null">Phone Number and Name cannot be empty</string>
+    <string name="error_phone_type">Phone Number format error!</string>
+    <string name="network_error">Abnormal network, check the network and try again!</string>
+    <string name="hint">Hint</string>
+    <string name="active_number_null">Please enter the correct verification code!</string>
+    <string name="regain_active_number_hint"><xliff:g id="NUMBER">%1$2s</xliff:g> seconds</string>
+    <string name="regain_active_number">reacquire verification code</string>
+    <string name="psw_different">two passwords do not match</string>
+    <string name="mid_is_null">You cannot activate the device because the business information is not registered.</string>
+
+
+    
+    <string name="order_reverse_alert">Reversal transaction is in progress，payment will be removed.</string>
+    <string name="refund_reverse_alert">Reversal transaction is in progress，cancellation will be removed.</string>
+    <string name="order_reverse_inprocess">Reversal transaction is in progress, do not leave this page</string>
+    <string name="reverse_success">Reversal transaction is successful.</string>
+    <string name="reverse_salevoid_success">Reversal transaction is successful，please cancel the order after 10 minutes</string>
+    <string name="not_complete">unfinished</string>
+    <string name="change_recover">Re-transaction</string>
+
+    <string name="tid_is_null">You cannot activate the device because the terminal information is missing.</string>
+    <string name="band_tid_hint">Bind the device to terminal ID&#160;<xliff:g id="NUMBER">%1$2s</xliff:g>&#160;,&#160;OK?</string>
+    <string name="change_band_tid_hint">Change terminal ID&#160;<xliff:g id="NUMBER">%1$2s</xliff:g>&#160;to a new device，the old one will not work any more&#160;,&#160;OK?</string>
+
+    <string name="band_device_ok">Binding device successfully</string>
+    <string name="change_band_ok">Modifying binding device successfully</string>
+    
+    <string name="change_password">Change password</string>
+    <string name="get_active_number_first">Verification code</string>
+    <string name="phone_number">Account</string>
+    <string name="need_reverse">Reversal transaction</string>
+    <string name="check_emv">IC card?</string>
+    <string name="hava_emv">Yes</string>
+    <string name="nothave_emv">No</string>
+    <string name="login_in_error">Login failed</string>
+    <string name="is_editing_phone_hint">You are changing cell-phone number, quit now？</string>
+    <string name="change_phone">Change</string>
+    <string name="original_phone">Cell-phone</string>
+    <string name="new_phone">New No.</string>
+    <string name="check_account">Account authentication</string>
+    <string name="phone_psw_error">Cell-phone number or password is incorrect, please check and try again.</string>
+    
+    <string name="re_login_for_active">Are you sure to exit, to re-activate the device?</string>
+    <string name="re_select_mid">Are you sure to reselect the merchant ID</string>
+    <string name="already_set_psw">Password is set, please login</string>
+    <string name="band_merchant_error">Your device is registered already, please contact customer service</string>
+    <string name="already_download_secret">Master key has been downloaded, do you want to re-download?</string>
+    <string name="contact_xunlian">Please contact CardInfoLink.</string>
+    
+    <string name="have_not_active_device">Device has not been activated yet, please activate it first.</string>
+	<string name="add_account">New user</string>
+	<string name="update_account">Modify user</string>
+	<string name="first_name">Last name</string>
+	<string name="last_name">First name</string>
+	<string name="first_name_hint">enter last name</string>
+	<string name="last_name_hint">enter first name</string>
+	<string name="verify_phone">Verify Cell-phone Number</string>
+    <string name="check_password">confirm password</string>
+    <string name="check_number">Pin No.</string>
+    <string name="ge"></string>
+   
+    <string name="backup_version">Current backup:</string>
+    <string name="backup_time">Last backup:</string>
+    <string name="checkout_backup">Backup data</string>
+    <string name="checkout_lead">Restore data</string>
+    <string name="merchant_message">Information</string>
+    <string name="copy_function">Backup</string>
+    <string name="merchantnikename">Merchant display name</string>
+    <string name="merchantaddress">Store address</string>
+    <string name="merchant_MID">Merchant ID:</string>
+    <string name="merchant_TID">Terminal ID:</string>
+    <string name="merchant_address">Address:</string>
+    <string name="merchantcupid">CPU ID :</string>
+    <string name="checkout_version">Current software version:</string>
+    <string name="checkout_time">Last updated:</string>
+    <string name="printer_pirnt">Print</string>
+    <string name="printer_save">Save</string>
+    <string name="sit_index">Seat Number</string>
+    <string name="delete_employee_success">Cancellation successful</string>
+    <string name="checkupdate_message">Non-updated</string>
+    <string name="change_info">Change</string>
+    <string name="no_change_info">No Change happens</string>
+    <string name="change_success">Change successfully</string>
+    <string name="nick_name_cannot_null">Nickname cannot be empty</string>
+    <string name="address_cannot_null">Address cannot be empty</string>
+    <string name="nickname_hint">Please enter a merchant nickname</string>
+    <string name="address_hint">Please enter a store address</string>
+	
+    <string name="condition_prompt">Please enter the correct search criteria!</string>
+    <string name="baidukey_prompt">Baidu licensed key is not correct</string>
+    <string name="baiduinit_prompt">BMapManager initialization error!</string>
+    <string name="statechange_prompt">state change：ID:</string>
+    <string name="state_prompt"> STATE:</string>
+    <string name="swipefail_prompt">Swiping card failed, please try again!</string>
+    <string name="passworderror_prompt">Wrong password, please try again!</string>
+    <string name="reversal_prompt">Reversal transaction code：</string>
+    <string name="exception_prompt">Sorry, software will exit.</string>
+    <string name="logfile_prompt">Log file does not exist!</string>
+    <string name="savedocsuccess_prompt">Archive success!</string>
+    <string name="savedocfail_prompt">Archive failed!</string>
+    <string name="importsuccess_prompt">Restoration Success!</string>
+    <string name="importfail_prompt">Unknown error, restoration failed!</string>
+    <string name="importfail_file">File not found, restoration failed!</string>
+    <string name="importfail_device">Device not found, restoration failed!</string>
+    <string name="exportsuccess_prompt">Backup success!</string>
+    <string name="exportfail_prompt">Unknown error, backup failed!</string>
+    <string name="exportfail_file">File not found, backup failed!</string>
+    <string name="exportfail_device">Device not found, back failed!</string>
+
+    <string name="swipe_card"> Swiping card</string>
+    <string name="trade_fail"> Transaction failed, no feedback&#8230;</string>
+    <string name="unknown_error"> Unknown error&#8230;</string>
+    <string name="trade_mac_error">MAC error&#8230;</string>
+    <string name="trade_network_error">Network eroor&#8230;</string>
+    <string name="icfail_trymsr">IC card does not work, please try magnetic card</string>
+    <string name="roll_back_msr">Rollback to magnetic card transaction, please enter password</string>
+    <string name="emv_retry"> Please insert IC card</string>
+    <string name="ic_deny">IC card transaction rejected</string>
+    <string name="donot_move_ic">Do not pull IC card out halfway</string>
+    <string name="msr_retry">Please re-swipe magnetic card</string>
+    <string name="emv_move_retry">Please not pull IC card out halfway, please try again</string>
+    <string name="pass_word_retry">Please re-enter password</string>
+    <string name="no_network_error">No network, transaction cannot be processed</string>
+    <string name="trade_success">Transaction success!</string>
+    <string name="reverse_fail">Reversal transaction failed!</string>
+    <string name="sign_in_process">Check-in in progress</string>
+    <string name="me_sale"></string>
+    <string name="me_salevoid"></string>
+    <string name="me_refund"></string>
+    
+    <string name="re_app">Reprint</string>
+    <string name="voidandrefund">Void/Refund</string>
+    <string name="sale_need_reverse">Sale need Reverse</string>
+    <string name="void_need_reverse">Void need Reverse</string>
+    <string name="remark">Notes</string>
+    <string name="totalprice">Total</string>
+    <string name="p_cash">Cash</string>
+    <string name="p_change">Change</string>
+    <string name="p_card">Credit Card</string>
+    <string name="r_number">Receipt Number</string>
+    <string name="cashier">Cashier</string>
+    <string name="addinfo">Adding</string>
+   	<string name="saddress">Address</string>
+   	
+   	<string name="p_name">Name</string>
+   	<string name="p_count">Quantity</string>
+   	<string name="p_price">Price</string>
+   	<string name="p_amount">Sum</string>
+   	
+   	<string name="p_mname">Merchant:</string>
+   	<string name="p_start_date">From:</string>
+   	<string name="p_end_date">To:</string>
+   	<string name="p_total_amount">Total Sales:</string>
+   	<string name="p_cash_amount">Cash:</string>
+   	<string name="p_card_amount">Credit Card:</string>
+   	<string name="p_total_count">Transactions:</string>
+   	<string name="p_no_record">No records</string>
+   	
+   	<string name="reverse_fail_report">Reversal transaction fail report</string>
+   	<string name="serial_number">Serial No.</string>
+   	<string name="authorization_code">Authorization No.:</string>
+   	<string name="pr_amount">Sum:</string>
+   	<string name="pr_card">Card No.:</string>
+   	<string name="pr_time">Time:</string>
+   	
+   	<string name="term"></string>
+   	
+   	<string name="year">Y</string>
+   	<string name="month">M</string>
+   	<string name="day">D</string>
+   	<string name="hour">H</string>
+   	<string name="min">m</string>
+   	<string name="sec">s</string>
+   	<string name="unkown">Unknown</string>
+   	
+    <string name="current_version">Current Version:</string>
+    <string name="neednot_update">, is the latest version.</string>
+    <string name="update_title">Update</string>
+    <string name="findnew_prompt">. Find new version:</string>
+    <string name="choose_update">, update now?</string>
+    <string name="downloading">Downloading</string>
+    <string name="notnow_update">Not now</string>
+    <string name="update_merchant_save">Save</string>
+    
+	<string name="band_mid">Banding MID</string>
+	<string name="band_tid">Banding TID</string>
+	<string name="is_down_secret_key_hint">Download the master key 1/3&#8230;</string>
+	<string name="is_down_ic_secret_key_hint">Download IC card public key 2/3&#8230;</string>
+	<string name="is_down_ic_params_hint">Download IC card parameters 3/3&#8230;</string>
+	<string name="prepare_down_secret_key_hint">Start to download the parameters&#160;,&#160;please keep internet connected&#160;,&#160;ready now?</string>
+	<string name="onsale_money">¥</string>
+	<string name="onsale_percent">%</string>
+	
+	<string name="selftest">Device detection</string>
+	<string name="self_re_check">Detection</string>
+	<string name="self_in_process">In detection, please wait!</string>
+	<string name="self_check_ok">Device in good condition!</string>
+	<string name="self_check_notok">Abnormal found</string>
+	<string name="self_netlink">Internet</string>
+	<string name="self_box">Cashbox</string>
+	<string name="self_ic">IC card module</string>
+	<string name="self_hard_pin">Hard password keyboard</string>
+	<string name="self_msr">Magnetic stripe card module</string>
+	<string name="self_nfc">NFC module</string>
+	<string name="self_soft_pin">Soft password keyboard</string>
+	<string name="self_printer">Printer</string>
+	
+	<string name="remark_message">Note</string>
+	<string name="down_secret_key_error">Download master key failed,please contact cardinfolink!</string>
+	<string name="pin_pad_connect_error">Password keyboard connection error, please check it again!</string>
+	<string name="psw_lenth_hint">Password length is between 6&#8211;16 </string>
+	<string name="download_secret_success">Download parameters successfully!</string>
+	<string name="not_store_account_phone">your phone not register!</string>
+	<string name="is_have_same_phone">your input number registered!</string>
+	<string name="switch_on">ON</string>
+    <string name="switch_off">OFF</string>
+    <string name="attr_price_dialog_default">price</string>
+   	<string name="attr_attr_dialog_default">property</string>
+   	
+   	<string name="no_sale_info">No Infos&#8230;</string>
+   	
+   	<string name="download_complete">Download Completed!</string>
+   	<string name="download_error">Download Error!</string>
+   	<string name="sdcard_error">SDCard Error!</string>
+   	<string name="importfail_DBnotNull">Database is not empty yet,please restore factory default first!</string>
+</resources>

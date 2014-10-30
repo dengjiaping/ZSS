@@ -1,0 +1,15 @@
+<com.koolyun.mis.widget.CheckedLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/head_radio_xml">
+ 	
+    <TextView
+        android:id="@+id/settingProductDirItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下载目录一"
+        android:textColor="@color/text_normal_color"
+        android:textSize="26.0px"
+        android:layout_centerInParent="true" />
+</com.koolyun.mis.widget.CheckedLayout>

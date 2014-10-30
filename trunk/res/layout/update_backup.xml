@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/update_backup_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/kivvi"
+        android:contentDescription="@string/unkown" />
+
+    <RelativeLayout
+        android:id="@+id/update_backup_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/update_backup_imageview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" >
+
+        <TextView
+            android:id="@+id/checkbackup_time"
+            style="@style/update_merchant_textview"
+            android:text="@string/backup_time" />
+
+        <TextView
+            android:id="@+id/checkbackup_time_show"
+            style="@style/update_merchant_textview"
+            android:layout_alignTop="@id/checkbackup_time"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/checkbackup_time"
+            android:text="@string/unkown" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/checkexport_btn"
+        style="@style/update_merchant_textview"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/update_backup_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_bg_xml"
+        android:text="@string/checkout_backup"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/checkimport_btn"
+        style="@style/update_merchant_textview"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkexport_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_bg_xml"
+        android:text="@string/checkout_lead"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+</RelativeLayout>

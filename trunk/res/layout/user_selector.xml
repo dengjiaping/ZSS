@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.koolyun.mis.widget.HorizontalListView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/user_bar"
+    android:layout_width="@dimen/log_srcoll_width"
+   	android:layout_height="@dimen/log_srcoll_height"
+   	android:layout_alignRight="@id/help_bar"
+   	android:layout_alignLeft="@id/help_bar"
+   	android:layout_marginTop="10dp"
+    android:layout_below="@id/help_bar"
+    android:scrollbars="horizontal"
+    android:background="#00000000"
+    android:drawSelectorOnTop="true" />

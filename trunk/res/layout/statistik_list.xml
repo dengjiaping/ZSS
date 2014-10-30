@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <com.koolyun.mis.widget.StatistikItemView
+        android:id="@+id/total_amount"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        />
+    <com.koolyun.mis.widget.StatistikItemView
+        android:id="@+id/cash_amount"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        />
+    <com.koolyun.mis.widget.StatistikItemView
+        android:id="@+id/card_amount"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        />
+    <!-- 
+    <com.cynovo.sirius.ui.widget.StatistikItemView
+        android:id="@+id/other_amount"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        />
+         -->
+    <com.koolyun.mis.widget.StatistikItemView
+        android:id="@+id/total_count"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        />
+</LinearLayout>

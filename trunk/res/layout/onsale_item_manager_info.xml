@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/account_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/account_name"
+        android:layout_width="550dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/account_pic"
+        android:layout_marginBottom="30dp"
+        android:layout_centerVertical="true"
+        android:gravity="center|left"
+        android:layout_marginLeft="30dp"
+        android:maxLines="2"
+        android:layout_toRightOf="@+id/account_pic"
+        android:textSize="30sp" />
+	
+    <Button
+        android:id="@+id/addount_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:background="@drawable/button_roundconer_selector" 
+        android:drawableLeft="@drawable/write"
+        android:paddingLeft="20dp"/>
+       
+    
+    <TextView 
+        android:id="@+id/admin_text"
+         android:layout_width="wrap_content"
+         android:textSize="30sp"
+         android:textColor="@color/text_normal_color"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:text="@string/administrator"
+        android:visibility="invisible"/>
+    
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    	<integer name="price_limit_length">8</integer>
+    	<integer name="product_name_limit_length">16</integer>
+</resources>

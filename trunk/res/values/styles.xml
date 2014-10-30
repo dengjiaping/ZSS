@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- style for the app <item name="android:selectableItemBackground">@drawable/topbar_bg</item> -->
+    <style name="Theme.CustomActivityTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/Theme.Par10ActionBar</item>
+        <item name="android:actionBarTabTextStyle">@style/TabBarText</item>
+        <item name="@android:attr/actionBarSize">@dimen/artion_bar_height</item>
+    </style>
+
+    <!-- style for the action bar backgrounds -->
+    <!--  -->
+    <style name="Theme.Par10ActionBar" parent="@android:style/Widget.Holo.ActionBar"></style>
+
+    <style name="TabBarText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/text_normal_color</item>
+    </style>
+
+    <style name="NormalTextEditStyle" parent="@android:style/Widget.TextView">
+        <item name="android:background">@drawable/enter_active</item>
+    </style>
+
+    <style name="Theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:width">808dp</item>
+        <item name="android:height">660dp</item>
+        <item name="android:backgroundDimAmount">0.8</item>
+    </style>
+
+    <!-- 隐藏菜单 风格1 -->
+    <style name="Theme_dialog1" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowEnterAnimation">@anim/push_home_page_right_in</item>
+        <item name="android:windowExitAnimation">@anim/push_home_page_right_out</item>
+    </style>
+
+    <!-- 隐藏菜单 风格2 -->
+    <style name="Theme_dialog2" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowEnterAnimation">@anim/fade</item>
+        <item name="android:windowExitAnimation">@anim/hold</item>
+    </style>
+
+    <!--
+    checkbox 风格
+    <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox</item>
+	</style>
+    -->
+    <!-- radiobox 风格 -->
+
+    <style name="Theme_radio">
+        <item name="android:background">@drawable/shape_select </item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox</item>
+    </style>
+    <!-- switch style -->
+    <declare-styleable name="Switch">
+
+        <!-- Drawable to use as the "thumb" that switches back and forth. -->
+        <attr name="thumb" format="reference" />
+        <!-- Drawable to use as the "track" that the switch thumb slides within. -->
+        <attr name="track" format="reference" />
+        <!-- Text to use when the switch is in the checked/"on" state. -->
+        <attr name="textOn" format="string" />
+        <!-- Text to use when the switch is in the unchecked/"off" state. -->
+        <attr name="textOff" format="string" />
+        <!-- Amount of padding on either side of text within the switch thumb. -->
+        <attr name="thumbTextPadding" format="dimension" />
+        <!-- TextAppearance style for text displayed on the switch thumb. -->
+        <attr name="switchTextAppearance" format="reference" />
+        <!-- Minimum width for the switch component -->
+        <attr name="switchMinWidth" format="dimension" />
+        <!-- Minimum space between the switch and caption text -->
+        <attr name="switchPadding" format="dimension" />
+    </declare-styleable>
+
+    <style name="Switch">
+        <item name="android:track">@drawable/switch_track_holo_dark</item>
+        <item name="android:thumb">@drawable/switch_inner_holo_dark</item>
+        <!--
+        <item name="track">@drawable/switch_bg_default_mz</item>
+        <item name="thumb">@drawable/switch_thumb_activated_mz</item>
+        -->
+        <item name="android:switchTextAppearance">@android:style/TextAppearance.Small</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textOn">@string/switch_on</item>
+        <item name="android:textOff">@string/switch_off</item>
+        <item name="android:thumbTextPadding">12dip</item>
+        <item name="android:switchMinWidth">96dip</item>
+        <item name="android:switchPadding">16dip</item>
+    </style>
+
+
+
+    <style name="select_mit_tid_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/text_normal_color</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <!-- 用户管理界面EditText style -->
+    <style name="user_manager_edittext">
+        <item name="android:layout_width">280dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:background">@drawable/editshape</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textColorHint">#C7C7C7</item>
+    </style>
+    
+    
+    <style name="user_manager_edittext_text">
+        <item name="android:layout_width">280dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:background">@drawable/edit_shape_text</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textColorHint">#C7C7C7</item>
+    </style>
+    <!-- 用户管理界面TextView style -->
+    <style name="user_manager_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:gravity">right</item>
+    </style>
+    <!-- 用户的input输入默认字体的设置 -->
+    <style name="input_style">
+        <item name="android:textColorHint">#C7C7C7</item>
+    </style>
+    
+    <style name="color_style">
+        <item name="android:textColor">#C4C4C4</item>
+    </style>
+    <!-- 设置text -->
+    <style name="update_merchant_textview">
+         <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+    <style name="udpate_merchant_edittext">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/editshape</item>
+        <item name="android:textColorHint">#C7C7C7</item>
+    </style>
+    <!-- 设置-商户信息-button的样式 -->
+    <style name="udpate_merchant_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/change_info</item>
+        <item name="android:background">@drawable/button_roundconer_selector</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">50dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <!-- 删除button的字体颜色和大小 -->
+    <style name="manager_delete_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/gray_color</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+    <!-- 左右分割的界面，左边部分的标题栏样式 -->
+    <style name="left_top_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">95dp</item>
+        <item name="android:background">@drawable/catalog_top</item>
+    </style>
+    <style name="membership_manage_text">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_normal_color</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="mamber_pay_text">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textColor">@color/text_normal_color</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    
+    <style name="membership_card_list_linearlayout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">62dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="membership_card_list_left_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/text_normal_color</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+    <style name="membership_card_list_right_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:textColor">@color/text_normal_color</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+    
+    <style name="leftbar_back_style">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:textSize">30.0px</item>
+ 		<item name="android:text">@string/trade_back</item>
+       	<item name="android:drawableLeft">@drawable/left_bar_back_2</item>
+        <item name="android:textColor">@color/text_normal_color</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+    
+    <style name="setting_edit_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">28.0px</item>
+		<item name="android:layout_marginLeft">45dp</item>
+        <item name="android:textColor">@color/text_normal_color</item>
+        <item name="android:drawablePadding">50dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    
+    <style name="setting_edit_eidt_style">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:background">@drawable/input</item>
+        <item name="android:drawablePadding">60dp</item>
+    </style>
+</resources>

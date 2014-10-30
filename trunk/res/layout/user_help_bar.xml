@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_bar"
+    android:layout_width="@dimen/login_help_bar_width"
+   	android:layout_height="@dimen/login_help_bar_height" >
+   	
+   		<Button 
+   		    android:id="@+id/login_bak"
+   		    android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:visibility="invisible"
+    		android:layout_alignParentLeft="true"
+    		android:background="@drawable/login_back"/>
+   			
+    	<TextView 
+    	    android:id="@+id/left_text"
+	        android:text="@string/user_name"
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:maxWidth="600dp"
+    		android:singleLine="true"
+	        android:textColor="@color/text_normal_color"
+	        android:textSize="30sp"
+	        android:layout_toRightOf="@id/login_bak"
+	        android:layout_marginLeft="21dp"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginBottom="10dp"/>
+	    
+	    <TextView 
+	        android:id="@+id/right_text"
+	        android:text="@string/select_user"
+    	    android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+	        android:textColor="@color/text_normal_color"
+	        android:textSize="18dp"
+	        android:layout_alignParentRight="true" 
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignBaseline="@id/left_text"/>
+
+    <ImageView
+        android:layout_width="@dimen/log_srcoll_width"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/bar_normal_color" />
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:gravity="center" >
+    
+    
+    
+    <TextView
+        android:id="@+id/logoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/app_name"
+        android:textSize="26.0px"
+        android:gravity="left"
+        android:paddingLeft="42dp"
+        android:layout_marginTop="-40dp"
+        android:textColor="@android:color/white"  />
+ 
+    <RelativeLayout
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/logoLayout"
+        android:layout_below="@id/logoText"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true" >
+        <TextView
+            android:id="@+id/appChinaName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40.0px"
+            android:text="@string/appChinaName"
+            android:textColor="@android:color/white" />
+        <TextView
+            android:id="@+id/appEnglishName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30.0px"
+            android:text="@string/appEnglishName"
+            android:layout_below="@id/appChinaName"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+    
+    <EditText
+        android:id="@+id/loginNameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_input_0"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
+        android:text="13888888888"
+        android:layout_alignLeft="@id/logoLayout"
+        android:layout_alignRight="@id/logoLayout"
+        android:drawableLeft="@drawable/user"
+        android:layout_below="@id/logoLayout"
+        android:layout_marginTop="25dp"
+         />
+    
+    <EditText
+        android:id="@+id/loginPassWordEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_input_0"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
+        android:layout_alignLeft="@id/logoLayout"
+        android:layout_alignRight="@id/logoLayout"
+        android:drawableLeft="@drawable/lock"
+        android:layout_below="@id/loginNameEdit"
+        android:layout_marginTop="30dp" />
+    
+    <Button
+        android:id="@+id/loginSureBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/loginPassWordEdit"
+        android:layout_alignRight="@id/loginPassWordEdit"
+        android:background="@drawable/login_sure_btn_xml"
+        android:layout_below="@id/loginPassWordEdit"
+        android:text="@string/sure"
+        android:textSize="32.0px"
+        android:layout_marginTop="40dp"
+        android:textColor="@android:color/white" />
+    
+</RelativeLayout>

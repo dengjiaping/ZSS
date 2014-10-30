@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="110dp">
+    
+	<com.koolyun.mis.widget.MoneyView
+       android:id="@+id/order_amount"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+	   android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true"
+       android:textSize="28.0px"
+       android:layout_marginLeft="70dp"
+       android:layout_marginTop="18dp"
+       android:maxLength="12"
+       android:textColor="#f99"
+       android:singleLine="true" />
+	<TextView
+	   android:id="@+id/notpaynote"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_toRightOf="@+id/order_amount"
+       android:layout_alignTop="@id/order_amount"
+       android:layout_marginLeft="15dp"
+       android:textSize="25.0px" 
+       android:gravity="left"
+       android:textColor="#f99"/>
+	
+	<TextView
+	   android:id="@+id/notpayAccountNo"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_toRightOf="@+id/notpaynote"
+       android:layout_alignTop="@id/notpaynote"
+       android:layout_marginLeft="15dp"
+       android:textSize="25.0px" 
+       android:visibility="gone"
+       android:textColor="@color/text_normal_color"
+       android:gravity="left"/>
+	
+	<TextView
+	   android:id="@+id/order_depcription"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:singleLine="true"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@id/order_amount"
+       android:layout_marginTop="8dp"
+       android:layout_marginLeft="70dp"
+       android:textSize="25.0px" 
+       android:gravity="left"
+       android:textColor="#bbb"/>
+
+	
+	<TextView
+	   android:id="@+id/order_time"
+       android:layout_width="wrap_content"
+       android:layout_height="80dp"
+       android:singleLine="true"
+       android:textSize="25.0px" 
+       android:layout_alignParentRight="true"
+       android:layout_marginRight="15dp"
+       android:layout_alignTop="@id/order_amount"
+       android:gravity="right|top"
+       android:textColor="#818181"/>
+ 
+</RelativeLayout>

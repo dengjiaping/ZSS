@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center_horizontal"
+	android:clickable="true"
+	android:background="@drawable/pattern1" >
+
+    <ImageView
+        android:id="@+id/left3"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@drawable/left_bar_1" 
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/accounts" />
+  
+     
+     <FrameLayout
+         android:id="@+id/leftbar_container"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:layout_toLeftOf="@+id/left3" /> 
+    
+</RelativeLayout>

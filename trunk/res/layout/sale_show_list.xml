@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/catalog_bg"
+    android:padding="0dp" >
+
+    <RelativeLayout
+        android:id="@+id/shopping_cat_total_money"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/shopping_navgate_bg"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:id="@+id/rl_go_to_pay"
+            android:clickable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shopping_cart_operate_btn_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="去结算"
+                android:textColor="@color/v2_navagate_title_bg"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/txt_shopping_cat_total_money"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:text="bb"
+                android:textColor="@color/txt_shopping_cat_total_money"
+                android:textSize="26sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_shopping_cart_operate"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+         android:layout_marginBottom="3dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+<TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape_shopping_cart_line" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp" >
+
+            <ImageButton
+                android:id="@+id/ib_shopping_cart_add"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/shopping_cart_operate_btn_bg"
+                android:src="@drawable/shopping_add_product" />
+
+            <ImageButton
+                android:id="@+id/ib_shopping_cart_decrease"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_toRightOf="@id/ib_shopping_cart_add"
+                android:background="@drawable/shopping_cart_operate_btn_bg"
+                android:src="@drawable/shopping_miners_product" />
+
+            <Button
+                android:id="@+id/btn_shopping_cart_prod_attribute"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/shopping_cart_operate_btn_bg"
+                android:text="属性/优惠" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_shopping_cart_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp" >
+
+            <Button
+                android:id="@+id/btn_shopping_cart_delete_all"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/shopping_cart_operate_btn_bg"
+                android:text="清空" />
+
+            <Button
+                android:id="@+id/ib_shopping_cart_put_up"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_toRightOf="@id/btn_shopping_cart_delete_all"
+                android:background="@drawable/shopping_cart_operate_btn_bg"
+                android:text="挂单" />
+
+            <Button
+                android:id="@+id/btn_shopping_cart_delete_item"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/shopping_cart_operate_btn_bg"
+                android:text="删除品项" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_shopping_cart_operate"
+        android:background="@color/white"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_below="@id/shopping_cat_total_money" >
+
+        <fragment
+            android:id="@+id/SaleProductListFragment"
+            android:name="com.koolyun.mis.fragment.ShoppingCartFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </RelativeLayout>
+
+</RelativeLayout>

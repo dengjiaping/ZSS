@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 商家logo -->
+
+    <ImageView
+        android:id="@+id/update_merchant_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/editshape" />
+    <!-- 昵称 -->
+
+    <TextView
+        android:id="@+id/update_merchant_shopname"
+        style="@style/update_merchant_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_toRightOf="@id/update_merchant_logo"
+        android:text="@string/merchantnikename" />
+
+    <Button
+        android:id="@+id/changeNicknameButton"
+        style="@style/udpate_merchant_button"
+        android:layout_alignBaseline="@id/update_merchant_shopname"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/changeNicknameEdit"
+        style="@style/udpate_merchant_edittext"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@id/update_merchant_shopname"
+        android:layout_marginLeft="20dp"
+        android:layout_toLeftOf="@id/changeNicknameButton"
+        android:layout_toRightOf="@id/update_merchant_shopname"
+        android:hint="@string/nickname_hint"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLength="32"
+        android:paddingLeft="10dp" />
+    <!-- 地址 -->
+
+    <TextView
+        android:id="@+id/update_merchant_address"
+        style="@style/update_merchant_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/update_merchant_shopname"
+        android:layout_below="@id/update_merchant_shopname"
+        android:layout_marginTop="50dp"
+        android:text="@string/merchantaddress" />
+
+    <Button
+        android:id="@+id/changeAddressButton"
+        style="@style/udpate_merchant_button"
+        android:layout_alignBaseline="@id/update_merchant_address"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/changeAddressEdit"
+        style="@style/udpate_merchant_edittext"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@id/update_merchant_address"
+        android:layout_alignLeft="@id/changeNicknameEdit"
+        android:layout_alignRight="@id/changeNicknameEdit"
+        android:layout_below="@id/changeNicknameEdit"
+        android:layout_toLeftOf="@id/changeAddressButton"
+        android:layout_toRightOf="@id/update_merchant_address"
+        android:hint="@string/address_hint"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLength="128"
+        android:paddingLeft="10dp" />
+    <!-- 公司正式名称 -->
+
+    <TextView
+        android:id="@+id/merchantername"
+        style="@style/update_merchant_textview"
+        android:layout_alignLeft="@id/update_merchant_logo"
+        android:layout_below="@id/update_merchant_logo"
+        android:layout_marginTop="40dp"
+        android:text="@string/rec_merchantname" />
+    <!-- mid -->
+
+    <TextView
+        android:id="@+id/merchant_mid"
+        style="@style/update_merchant_textview"
+        android:layout_alignLeft="@id/merchantername"
+        android:layout_below="@id/merchantername"
+        android:layout_marginTop="10dp"
+        android:text="@string/merchant_MID" />
+    <!-- tid -->
+
+    <TextView
+        android:id="@+id/merchant_tid"
+        style="@style/update_merchant_textview"
+        android:layout_alignLeft="@id/merchant_mid"
+        android:layout_below="@id/merchant_mid"
+        android:layout_marginTop="10dp"
+        android:text="@string/merchant_TID" />
+    <!-- 商户地址 -->
+
+    <TextView
+        android:id="@+id/merchant_phsicaddress"
+        style="@style/update_merchant_textview"
+        android:layout_alignLeft="@id/merchant_tid"
+        android:layout_below="@id/merchant_tid"
+        android:layout_marginTop="10dp"
+        android:text="@string/merchant_address" />
+    <!-- cpu id -->
+
+    <TextView
+        android:id="@+id/merchant_cpuid"
+        style="@style/update_merchant_textview"
+        android:layout_alignLeft="@id/merchant_phsicaddress"
+        android:layout_below="@id/merchant_phsicaddress"
+        android:layout_marginTop="10dp"
+        android:text="@string/merchantcupid" />
+
+    <!-- 一下的textview是需要填写 -->
+
+    <TextView
+        android:id="@+id/companyNameText"
+        style="@style/update_merchant_textview"
+        android:layout_alignTop="@id/merchantername"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@id/merchantername" />
+
+    <TextView
+        android:id="@+id/mIDText"
+        style="@style/update_merchant_textview"
+        android:layout_alignLeft="@id/companyNameText"
+        android:layout_alignTop="@id/merchant_mid"
+        android:layout_below="@id/companyNameText"
+        android:layout_toRightOf="@id/merchant_mid" />
+
+    <TextView
+        android:id="@+id/tIDText"
+        style="@style/update_merchant_textview"
+        android:layout_alignLeft="@id/mIDText"
+        android:layout_alignTop="@id/merchant_tid"
+        android:layout_below="@id/mIDText"
+        android:layout_toRightOf="@id/merchant_tid" />
+
+    <TextView
+        android:id="@+id/companyAddressText"
+        style="@style/update_merchant_textview"
+        android:layout_alignLeft="@id/companyNameText"
+        android:layout_alignTop="@id/merchant_phsicaddress"
+        android:layout_below="@id/tIDText"
+        android:layout_toRightOf="@id/merchant_phsicaddress" />
+
+    <TextView
+        android:id="@+id/cpuIDText"
+        style="@style/update_merchant_textview"
+        android:layout_alignLeft="@id/companyNameText"
+        android:layout_alignTop="@id/merchant_cpuid"
+        android:layout_below="@id/companyAddressText"
+        android:layout_toRightOf="@id/merchant_cpuid" />
+
+    <Button
+        android:id="@+id/changeStoreInfoButton"
+        style="@style/update_merchant_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/merchant_cpuid"
+        android:layout_alignRight="@id/changeAddressEdit"
+        android:layout_below="@id/cpuIDText"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_bg_xml"
+        android:shadowColor="#000"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="@string/update_merchant_save"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+</RelativeLayout>

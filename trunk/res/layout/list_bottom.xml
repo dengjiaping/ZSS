@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="bottom" >
+
+    <com.koolyun.mis.widget.MyImageButton
+        android:id="@+id/product_list"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/product_list"
+        android:textColor="@color/text_normal_color"
+        android:textSize="25sp" />
+
+    <com.koolyun.mis.widget.MyImageButton
+        android:id="@+id/manual_input"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/manual_button_button_xml"
+        android:text="@string/manual_input"
+        android:textColor="@color/text_normal_color"
+        android:textSize="25sp" />
+
+</RelativeLayout>

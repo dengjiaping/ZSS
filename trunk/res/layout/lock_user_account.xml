@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_user_account"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:background="@drawable/btn_bg_2" > 
+   	 <Button
+        android:id="@+id/unlock_user_account_botton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="left|center_vertical"
+       	android:background="@drawable/unlock_account"
+       	android:paddingLeft="600dp"
+       	android:drawablePadding="10dp"
+       	android:text="@string/click_unlock"
+       	android:textSize="25sp"
+       	android:textColor="#FFFFFF"
+        android:drawableLeft="@drawable/unlock_2" />
+
+   	    
+   	 
+   	 <EditText
+   	     android:id="@+id/unlock_user_account_edittext"
+   	     android:layout_width="wrap_content"
+   	     android:layout_height="wrap_content"
+   	     android:layout_alignTop="@+id/unlock_user_account_botton"
+   	     android:layout_alignParentRight="true"
+   	     android:drawableLeft="@drawable/login_password"
+   	     android:background="@drawable/btn_bg"
+   	     android:hint="@string/input_password"
+   	     android:ems="10"
+   	     android:visibility="gone"
+   	     android:inputType="textPassword" >
+		<requestFocus />
+   	   
+   	 </EditText>
+  
+</RelativeLayout>

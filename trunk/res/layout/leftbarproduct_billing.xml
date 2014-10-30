@@ -1,0 +1,475 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+     <Button
+        android:id="@+id/leftbar_product_billing"
+        android:layout_width="@dimen/back_btn_width"
+        android:layout_height="60dp"
+        android:background="@drawable/leftbar_back_button_xml" />
+     
+    <TextView
+        android:id="@+id/leftbar_product_billing_code"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignBottom="@+id/leftbar_product_billing"
+        android:layout_toRightOf="@+id/leftbar_product_billing"
+        android:gravity="center"
+        android:textColor="@color/text_normal_color"
+        android:text="收据单号 76812X"
+        android:textSize="30sp" />
+    
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/left_grayline"
+        android:layout_below="@+id/leftbar_product_billing_code" />
+    
+     <RelativeLayout
+        android:id="@+id/receiptInformation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/leftbar_product_billing"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/receipt_background" >
+
+        <TextView
+            android:id="@+id/textStoreName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/rec_merchantname"
+            android:textColor="#666"
+            android:textSize="20sp" />
+        
+        <TextView
+            android:id="@+id/layRefer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/textStoreName2"
+            android:text="凯特滋"
+            android:textSize="20sp" />
+        
+
+        <TextView
+            android:id="@+id/textMerchant2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/textStoreName2"
+            android:text="@string/rec_merchantid"
+            android:textColor="#666"
+            android:textSize="20sp" />
+
+         <TextView
+            android:id="@+id/textMerchant2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_alignTop="@id/textMerchant2"
+            android:layout_alignParentRight="true"
+            android:text="************"
+            android:textSize="20sp" />
+        
+        
+        <TextView
+            android:id="@+id/textDeviceCode2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/rec_terminal"
+            android:layout_below="@id/textMerchant2"
+            android:textColor="#666"
+            android:textSize="20sp" />
+		 <TextView
+            android:id="@+id/textDeviceCode2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_alignTop="@id/textDeviceCode2"
+            android:layout_alignParentRight="true"
+            android:text="************"
+            android:textSize="20sp" />
+        
+         <!-- 
+         <TextView
+            android:id="@+id/textopmanno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/rec_opmanno"
+            android:textColor="#666"
+            android:layout_below="@id/textDeviceCode2"
+            android:textSize="20sp" />
+         
+         <TextView
+            android:id="@+id/textopmanno_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_alignTop="@id/textopmanno"
+            android:layout_alignParentRight="true"
+            android:text="************"
+            android:textSize="20sp" />
+        -->
+        
+       <TextView
+            android:id="@+id/cardNoTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/textDeviceCode2"
+            android:text="@string/rec_cardnum"
+            android:textColor="#666"
+            android:textSize="20sp" />
+       
+        <TextView
+            android:id="@+id/cardNoTextView2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_alignTop="@id/cardNoTextView2"
+            android:layout_alignParentRight="true"
+            android:text="************"
+            android:textSize="20sp" />
+          
+        <TextView
+            android:id="@+id/issuingBankTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/cardNoTextView2"
+            android:text="@string/rec_issuer"
+            android:textColor="#666"
+            android:textSize="20sp" />
+        
+        <TextView
+            android:id="@+id/issuingBankTextView2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_alignTop="@id/issuingBankTextView2"
+            android:layout_alignParentRight="true"
+            android:text="************"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/acqnoTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/rec_cardlinenum"
+            android:layout_below="@id/issuingBankTextView2"
+            android:textColor="#666"
+            android:textSize="20sp" />
+        
+        <TextView
+            android:id="@+id/acqnoTextView2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_alignTop="@id/acqnoTextView2"
+            android:layout_alignParentRight="true"
+            android:text="************"
+            android:textSize="20sp" />
+      
+        <TextView
+            android:id="@+id/paymentTypeTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/rec_tradetype"
+            android:layout_below="@id/acqnoTextView2"
+            android:textColor="#666"
+            android:textSize="20sp" />
+        
+         <TextView
+            android:id="@+id/paymentTypeTextView2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_alignTop="@id/paymentTypeTextView2"
+            android:layout_alignParentRight="true"
+            android:text="************"
+            android:textSize="20sp" />
+ 
+        <TextView
+            android:id="@+id/batchNoTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/paymentTypeTextView2"
+            android:text="@string/rec_tradebatchnum"
+            android:textColor="#666"
+            android:textSize="20sp" />
+        
+        <TextView
+            android:id="@+id/batchNoTextView2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_alignTop="@id/batchNoTextView2"
+            android:layout_alignParentRight="true"
+            android:text="************"
+            android:textSize="20sp" />
+        
+        
+
+        <TextView
+            android:id="@+id/certificatenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/rec_certificatenum"
+            android:layout_below="@id/batchNoTextView2"
+            android:textColor="#666"
+            android:textSize="20sp" />
+        
+        <TextView
+            android:id="@+id/certificatenum_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_alignTop="@id/certificatenum"
+            android:layout_alignParentRight="true"
+            android:text="************"
+            android:textSize="20sp" />
+         
+
+        <TextView
+            android:id="@+id/authorizationNoTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/rec_autho"
+            android:layout_below="@id/certificatenum"
+            android:textColor="#666"
+            android:textSize="20sp" />
+        
+        <TextView
+            android:id="@+id/authorizationNoTextView2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_alignTop="@id/authorizationNoTextView2"
+            android:layout_alignParentRight="true"
+            android:text="************"
+            android:textSize="20sp" />
+        
+        <TextView
+            android:id="@+id/referenceNoTextVeiew2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/authorizationNoTextView2"
+            android:text="@string/rec_reference"
+            android:textColor="#666"
+            android:textSize="20sp" />
+        
+       <TextView
+            android:id="@+id/referenceNoTextVeiew2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_alignTop="@id/referenceNoTextVeiew2"
+            android:layout_alignParentRight="true"
+            android:text="************"
+            android:textSize="20sp" />
+        
+         <TextView
+            android:id="@+id/dealdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/referenceNoTextVeiew2"
+            android:text="@string/rec_date"
+            android:textColor="#666"
+            android:textSize="20sp" />
+         
+          <TextView
+            android:id="@+id/dealdate_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_alignTop="@id/dealdate"
+            android:layout_alignParentRight="true"
+            android:text="************"
+            android:textSize="20sp" />
+        
+         
+         <TextView
+            android:id="@+id/dealtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/dealdate"
+            android:text="@string/rec_time"
+            android:textColor="#666"
+            android:textSize="20sp" />
+         
+          <TextView
+            android:id="@+id/dealtime_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_alignTop="@id/dealtime"
+            android:layout_alignParentRight="true"
+            android:text="************"
+            android:textSize="20sp" />
+         
+          <TextView
+            android:id="@+id/dealamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/dealtime"
+            android:text="@string/rec_amount"
+            android:textColor="#666"
+            android:textSize="20sp" />
+        
+         <TextView
+            android:id="@+id/dealamount_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_alignTop="@id/dealamount"
+            android:layout_alignParentRight="true"
+            android:text="************"
+            android:textSize="20sp" />
+        
+        <!--  
+        <TextView
+            android:id="@+id/layRefer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="438dp" />
+
+        <TextView
+            android:id="@+id/textStoreName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/layRefer"
+            android:layout_marginTop="10dp"
+            android:text="@string/tenant_name"
+            android:textColor="#666"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textMerchant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/layRefer"
+            android:layout_marginTop="50dp"
+            android:text="@string/tenant_no"
+            android:textColor="#666"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textDeviceCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/layRefer"
+            android:layout_marginTop="90dp"
+            android:text="@string/tenant_no"
+            android:textColor="#666"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/issuingBankTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/layRefer"
+            android:layout_marginTop="130dp"
+            android:text="@string/tenant_no"
+            android:textColor="#666"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cardNoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/layRefer"
+            android:layout_marginTop="170dp"
+            android:text="@string/tenant_no"
+            android:textColor="#666"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/validThroughTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/layRefer"
+            android:layout_marginTop="210dp"
+            android:text="@string/tenant_no"
+            android:textColor="#666"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/paymentTypeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/layRefer"
+            android:layout_marginTop="250dp"
+            android:text="@string/trade_type"
+            android:textColor="#666"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/traceNoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/layRefer"
+            android:layout_marginTop="290dp"
+            android:text="@string/trade_inqurenum"
+            android:textColor="#666"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/timeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/layRefer"
+            android:layout_marginTop="330dp"
+            android:text="@string/trade_inqurenum"
+            android:textColor="#666"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/authorizationNoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/layRefer"
+            android:layout_marginTop="370dp"
+            android:text="@string/trade_inqurenum"
+            android:textColor="#666"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/referenceNoTextVeiew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/layRefer"
+            android:layout_marginTop="410dp"
+            android:text="@string/trade_inqurenum"
+            android:textColor="#666"
+            android:textSize="20sp" />
+            -->
+    </RelativeLayout>
+  
+     
+ 
+</RelativeLayout>

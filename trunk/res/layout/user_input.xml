@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <EditText 
+        android:id="@+id/user_name_input"
+        android:layout_width = "338dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:padding="0dp"
+        android:background="@drawable/text_enter_xml"
+        android:drawableLeft="@drawable/login_left_drawable_xml"
+        android:hint="@string/user_hint"
+        android:maxLines="1"
+        android:drawablePadding="12dp"
+        android:singleLine="true"
+        android:maxLength="20"
+        android:textColor="@color/text_normal_color"
+        style="@style/input_style"
+        android:textSize="28sp"/>
+    <EditText 
+        android:id="@+id/user_pass_input"
+        android:layout_width = "338dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/user_name_input"
+        android:padding="0dp"
+        android:background="@drawable/text_enter_xml"
+        android:drawableLeft="@drawable/login_password_selector"
+        android:hint="@string/pass_hint"
+        android:maxLines="1"
+        android:layout_marginLeft="31dp"
+        android:drawablePadding="12dp"
+        android:singleLine="true"
+        android:maxLength="20"
+        android:textColor="@color/text_normal_color"
+        android:inputType="textPassword"
+        style="@style/input_style"
+        android:textSize="28sp"/>
+    
+    <Button
+        android:id="@+id/forgetPasswordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_pass_input"
+        android:layout_alignParentRight="true"
+        android:text="@string/forget_password"
+        android:textColor="@color/text_normal_color"
+        android:textSize="18sp"
+        android:background="@drawable/forget_password_selector"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        />
+	    
+    <Button 
+        android:id="@+id/login_btn"
+        android:layout_width = "697dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_bg_xml"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:text="@string/login_in"
+        android:layout_centerHorizontal="true"
+        android:shadowColor="#000"
+        android:layout_below="@id/forgetPasswordButton"
+        android:shadowDy="1"
+        android:layout_marginTop="20dp"
+        android:shadowRadius="1"/>
+
+</RelativeLayout>

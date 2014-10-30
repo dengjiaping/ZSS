@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/repeat_bg"
+    android:layout_height="match_parent"
+    >
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        />
+    
+	<RelativeLayout
+        android:layout_width="@dimen/log_srcoll_width"
+        android:layout_height="@dimen/log_srcoll_height"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        >
+	    <EditText 
+	        android:id="@+id/userNameEditText1"
+	        android:layout_width = "338dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginTop="20dp"
+	        android:padding="0dp"
+	        android:background="@drawable/text_enter_xml"
+	        android:drawableLeft="@drawable/login_left_drawable_xml"
+	        android:hint="@string/user_name_hint"
+	        android:maxLines="1"
+	        android:drawablePadding="12dp"
+	        android:singleLine="true"
+	        android:maxLength="20"
+	        style="@style/input_style"
+	        android:textColor="@color/text_normal_color"
+	        android:textSize="28sp"/>
+	    <EditText 
+	        android:id="@+id/userPhoneEditText1"
+	        android:layout_width = "338dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignTop="@+id/userNameEditText1"
+	        android:padding="0dp"
+	        android:background="@drawable/text_enter_xml"
+	        android:drawableLeft="@drawable/login_left_phone_selector"
+	        android:hint="@string/user_phone_hint"
+	        android:maxLines="1"
+	        android:layout_marginLeft="31dp"
+	        android:drawablePadding="12dp"
+	        android:singleLine="true"
+	        android:maxLength="20"
+       		android:inputType="number"
+       		style="@style/input_style"
+	        android:textColor="@color/text_normal_color"
+	        android:textSize="28sp"/>
+	    <Button 
+	        android:id="@+id/submitButton1"
+	        android:layout_width = "697dp"
+	        android:layout_height="60dp"
+	        android:layout_marginTop="30dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@+id/userNameEditText1"
+	        android:background="@drawable/btn_bg_xml"
+	        android:textSize="30sp"
+	        android:textColor="#fff"
+	        android:text="@string/submit"
+	        android:layout_centerHorizontal="true"
+	        android:shadowColor="#000"
+	        android:shadowDy="1"
+	        android:shadowRadius="1"/>
+    </RelativeLayout>
+
+</RelativeLayout>

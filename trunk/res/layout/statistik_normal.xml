@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/pattern1" >
+
+    <RelativeLayout
+        android:id="@+id/leftTopBar"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:layout_marginTop="15dp" >
+    
+    <Button
+        android:id="@+id/leftbar_detail_back_to1"
+        style="@style/leftbar_back_style"
+        android:layout_marginLeft="20dp"  />
+    
+    <Button
+        android:id="@+id/statistik_save"
+        android:layout_width="147dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true" 
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="left|center_vertical"
+        android:drawablePadding="10dp"
+        android:text="@string/printer_save"
+        android:background="@drawable/button_comm_selector_xml"
+        android:drawableLeft="@drawable/save"
+        android:paddingLeft="23dp"
+        android:textColor="@color/text_normal_color" />
+
+    <Button
+        android:id="@+id/statistik_printer"
+        android:layout_width="147dp"
+        android:layout_height="60dp"
+        android:layout_toLeftOf="@id/statistik_save"
+        android:layout_marginRight="15dp"
+        android:layout_alignTop="@id/statistik_save"
+        android:text="@string/printer_pirnt"
+        android:gravity="left|center_vertical"
+        android:drawablePadding="10dp"
+        android:background="@drawable/button_comm_selector_xml"
+        android:drawableLeft="@drawable/printer"
+        android:paddingLeft="23dp"
+        android:textColor="@color/text_normal_color" />
+
+    <TextView
+        android:id="@+id/receipt_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:text="@string/sales_statistics"
+        android:textColor="@color/title_color"
+        android:textSize="30.0px" />
+	</RelativeLayout>
+
+    <ImageView
+        android:id="@+id/leftbarimageview_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/appChinaName"
+        android:layout_below="@+id/leftTopBar"
+        android:background="@drawable/blue_line" />
+
+    <!-- <RadioGroup
+        android:id="@+id/date_week_month"
+        android:layout_width="448dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/leftbarimageview_line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/day"
+            android:layout_width="150dp"
+            android:layout_height="59dp"
+            android:background="@drawable/today_xml"
+            android:button="@android:color/transparent"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/current_day"
+            android:textColor="@color/text_normal_color"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/week"
+            android:layout_width="150dp"
+            android:layout_height="59dp"
+            android:background="@drawable/week_xml"
+            android:button="@android:color/transparent"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/current_week"
+            android:textColor="@color/text_normal_color"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/month"
+            android:layout_width="152dp"
+            android:layout_height="59dp"
+            android:background="@drawable/month_xml"
+            android:button="@android:color/transparent"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/current_month"
+            android:textColor="@color/text_normal_color"
+            android:textSize="20sp" />
+    </RadioGroup> -->
+
+        <Button
+            android:id="@+id/start_date"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/month_xml"
+            android:clickable="true"
+            android:gravity="center"
+            android:layout_marginTop="21dp"
+            android:layout_marginLeft="26dp"
+            android:layout_below="@id/leftbarimageview_line"
+            android:textColor="@color/text_normal_color"
+            android:textSize="20sp" />
+
+   
+
+        <Button
+            android:id="@+id/end_date"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/month_xml"
+            android:clickable="true"
+            android:gravity="center"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@id/start_date"
+            android:layout_alignTop="@id/start_date"
+            android:textColor="@color/text_normal_color"
+            android:textSize="20sp" />
+
+   <!--  <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/end_layout"
+        android:visibility="gone"
+        >
+
+        <com.cynovo.sirius.ui.widget.StatistikListView
+            android:id="@+id/statistik_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+        <ListView
+            android:id="@+id/productStatisticListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:fastScrollEnabled="true"
+            ></ListView>
+    </ViewFlipper> -->
+	<include
+	    android:id="@+id/viewPagerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@id/start_date"
+        android:layout_alignRight="@id/end_date"
+        android:layout_below="@+id/end_date"
+        layout="@layout/statistic_view_pager"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="32dp"
+	    />
+</RelativeLayout>

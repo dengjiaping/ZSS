@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/list_top" />
+
+    <ViewFlipper
+        android:id="@+id/allKindProductFlipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:flipInterval="200"
+        android:persistentDrawingCache="animation" >
+
+        <!-- 商品列表 -->
+        <com.koolyun.mis.widget.TEListView
+            android:id="@+id/allproductinfolistview"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:drawSelectorOnTop="true"
+            android:scrollbars="none" />
+        
+        <!-- 商品分类或优惠信息 -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ListView
+                android:id="@+id/allonsalelistview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:drawSelectorOnTop="true"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/tvLetter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#BB000000"
+                android:gravity="center"
+                android:maxWidth="70dip"
+                android:minWidth="70dip"
+                android:padding="10dip"
+                android:textColor="#99FFFFFF"
+                android:textSize="50sp" >
+            </TextView>
+
+            <com.koolyun.mis.widget.MySideBar
+                android:id="@+id/myView"
+                android:layout_width="30dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right" >
+            </com.koolyun.mis.widget.MySideBar>
+        </FrameLayout>
+    </ViewFlipper>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pay_top"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/pay_top_height1"  
+    android:background="@drawable/shopping_navgate_bg">
+    	<Button  
+            android:id="@+id/pay_bak_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:drawableLeft="@drawable/trade_button_back"
+            android:drawablePadding="25dp"
+            android:text="@string/trade_back"
+            android:background="#00000000"
+            android:layout_marginLeft="35dp"
+            android:visibility="visible"
+            android:textColor="@android:color/white"/>
+    	
+    	<Button 
+            android:id="@+id/new_order"
+            android:layout_width="101dp"
+            android:layout_height="98dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/button_xml"
+            android:text="@string/new_deal"
+            android:textColor="@color/text_normal_color"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:enabled="false"
+            android:visibility="invisible"
+            android:layout_margin="5dp"/>
+    	
+        <com.koolyun.mis.widget.MoneyView 
+            	android:id="@+id/total_money_text"
+            	android:layout_alignParentRight="true"
+            	android:layout_marginRight="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="30sp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="@android:color/white"/>
+        <TextView 
+            android:id="@+id/user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:maxWidth="400dp"
+            android:maxLines="2"
+			android:drawableLeft="@drawable/logo"
+			android:drawablePadding="20dp"
+			android:padding="0dp"
+            android:text="@string/user_name"
+            android:textSize="36sp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:textColor="@color/text_normal_color"/>
+
+</RelativeLayout>

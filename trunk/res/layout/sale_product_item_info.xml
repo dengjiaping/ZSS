@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:descendantFocusability="blocksDescendants"
+    android:minHeight="82dp" >
+
+    <RelativeLayout
+        android:id="@+id/product_item_left"
+        android:layout_width="40dp"
+         android:minHeight="100dp"
+        android:layout_height="match_parent" >
+        <TextView
+            android:id="@+id/sale_product_item_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/v2_cart_item_number_bg"
+            android:gravity="center"
+            android:text="9"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/product_item_left" >
+
+        <com.koolyun.mis.widget.MyGridView
+            android:id="@+id/gv_sale_product_item_attribute"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:clickable="false"
+            android:descendantFocusability="blocksDescendants"
+            android:focusable="false"
+            android:horizontalSpacing="5dp"
+            android:numColumns="5"
+            android:verticalSpacing="5dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gv_sale_product_item_attribute"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/sale_product_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="left|center_vertical"
+                android:text="商品名称"
+                android:textColor="@color/text_normal_color"
+                android:textSize="28sp" />
+
+            <com.koolyun.mis.widget.MoneyView
+                android:id="@+id/sale_product_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical|right"
+                android:maxLength="14"
+                android:singleLine="true"
+                android:text="12.50"
+                android:textColor="@color/text_normal_color"
+                android:textSize="25sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

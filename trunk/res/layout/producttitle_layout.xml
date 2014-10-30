@@ -1,0 +1,86 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+ 
+    <Button
+        android:id="@+id/product_title_back"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:drawableLeft="@drawable/detail_back"
+        android:text="@string/back"
+        android:paddingLeft="10dp"
+        android:gravity="left|center"
+        android:drawablePadding="10dp"
+        android:background="@drawable/title_button_xml"
+        android:textColor="@color/text_normal_color" />
+    <!--  
+    <ImageView 
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:background="#818181"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/product_title_back"
+        android:layout_centerVertical="true" />
+    
+     <Button
+        android:id="@+id/product_title_manager"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="8dp"
+         android:layout_toRightOf="@+id/product_title_back"
+        android:drawableLeft="@drawable/calculator25"
+        android:text="商品管理"
+        android:paddingLeft="10dp"
+        android:gravity="left|center"
+        android:drawablePadding="10dp"
+        android:background="@drawable/title_button_xml"
+        android:textColor="@color/text_normal_color" />
+     
+     
+      <ImageView 
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:background="#818181"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/product_title_manager"
+        android:layout_centerVertical="true" />
+     
+     
+     <Button
+        android:id="@+id/account_title_manager"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="8dp"
+         android:layout_toRightOf="@+id/product_title_manager"
+        android:drawableLeft="@drawable/calculator25"
+        android:text="用户管理"
+        android:paddingLeft="10dp"
+        android:gravity="left|center"
+        android:background="@drawable/title_button_xml"
+        android:drawablePadding="10dp"
+        android:textColor="@color/text_normal_color" />
+     
+    <ImageView 
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:background="#818181"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/account_title_manager"
+        android:layout_centerVertical="true" />
+    
+    <Button
+        android:id="@+id/update_title_manager"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="8dp"
+         android:layout_toRightOf="@+id/account_title_manager"
+        android:drawableLeft="@drawable/calculator25"
+        android:text="更新"
+        android:paddingLeft="10dp"
+        android:gravity="left|center"
+        android:background="@drawable/title_button_xml"
+        android:drawablePadding="10dp"
+        android:textColor="@color/text_normal_color" />
+     -->
+ </RelativeLayout> 

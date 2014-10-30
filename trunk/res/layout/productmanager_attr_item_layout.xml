@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="80dp" >
+    
+ 	   <TextView
+       android:id="@+id/attr_name" 
+       android:layout_width="wrap_content"
+       android:layout_height="80dp"
+       android:layout_centerVertical="true"
+       android:gravity="center"
+       android:layout_alignParentLeft="true"
+       android:layout_marginLeft="20dp"
+       android:textSize="20sp"
+       android:singleLine="true"/>
+
+   <Button
+       android:id="@+id/attr_remove"
+       android:layout_width="70dp"
+       android:layout_height="40dp"
+	   android:layout_centerVertical="true"
+       android:layout_marginRight="20dp"
+       android:layout_alignParentRight="true"
+       android:textColor="@color/gray_color" 
+       android:text="@string/delete"
+       android:textSize="22sp" />
+
+	 
+</RelativeLayout>

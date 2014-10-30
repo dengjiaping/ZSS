@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/usermg_listview_layout"
+        android:layout_width="770dp"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/catalog_bg" >
+
+        <RelativeLayout
+            android:id="@+id/usermg_top_id"
+            android:layout_width="fill_parent"
+            android:layout_height="95dp"
+            android:background="@drawable/catalog_top" >
+
+            <TextView
+                android:id="@+id/usermg_operation_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="@string/usermanager"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/usermg_add_btn"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/name_add_xml"
+                android:paddingLeft="40dp" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/usermg_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/usermg_top_id"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="2dp" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/userManagerFragmentLayout"
+        android:layout_width="470dp"
+        android:layout_height="match_parent"
+    	android:layout_toRightOf="@id/usermg_listview_layout"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginTop="18dp"
+        ></RelativeLayout>
+
+    <!-- <include
+        android:id="@+id/editUserLayout"
+        android:layout_width="470dp"
+        android:layout_height="match_parent"
+    	android:layout_toRightOf="@id/usermg_listview_layout"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginTop="18dp"
+	    layout="@layout/edit_user"
+        />
+    
+    <include
+        android:id="@+id/originalPhoneLayout"
+        android:layout_width="470dp"
+        android:layout_height="match_parent"
+    	android:layout_toRightOf="@id/usermg_listview_layout"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginTop="18dp"
+	    layout="@layout/original_phone"
+	    android:visibility="gone"
+        />
+    
+    <include
+        android:id="@+id/newPhoneLayout"
+        android:layout_width="470dp"
+        android:layout_height="match_parent"
+    	android:layout_toRightOf="@id/usermg_listview_layout"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginTop="18dp"
+	    layout="@layout/new_phone"
+	    android:visibility="gone"
+        /> -->
+
+</RelativeLayout>

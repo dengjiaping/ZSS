@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/loginUpdateLayout"
+    android:layout_height="match_parent" >
+    
+    <ImageView
+        android:id="@+id/checkupdate_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/kivvi"
+        android:contentDescription="@string/unkown" />
+    
+    <RelativeLayout
+        android:id="@+id/checkupdate_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/checkupdate_imageview" >
+        
+    <TextView
+        android:id="@+id/checkupdate_text"
+        android:text="@string/checkout_version"
+        style="@style/update_merchant_textview" />
+    
+    <TextView
+        android:id="@+id/checkupdate_text_show"
+        android:layout_toRightOf="@id/checkupdate_text"
+        android:layout_alignTop="@id/checkupdate_text"
+        style="@style/update_merchant_textview"
+        android:layout_marginLeft="10dp"
+        android:text="@string/unkown" />
+    
+    <TextView
+        android:id="@+id/checkupdate_time"
+        android:layout_below="@id/checkupdate_text" 
+        android:layout_alignLeft="@id/checkupdate_text"
+        android:layout_marginTop="20dp"
+        android:text="@string/checkout_time"
+        style="@style/update_merchant_textview"/>
+    
+    <TextView
+        android:id="@+id/checkupdate_time_show"
+        style="@style/update_merchant_textview"
+        android:text="@string/checkupdate_message"
+        android:layout_alignTop="@id/checkupdate_time"
+        android:layout_below="@id/checkupdate_text_show"
+        android:layout_toRightOf="@id/checkupdate_time"
+        android:layout_marginLeft="10dp" />
+
+    </RelativeLayout>
+   
+    <Button 
+        android:id="@+id/checkupdate_btn"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkupdate_layout"
+        android:background="@drawable/btn_bg_xml"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:shadowColor="#000"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="@string/check_update"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        style="@style/update_merchant_textview"/>
+
+</RelativeLayout>

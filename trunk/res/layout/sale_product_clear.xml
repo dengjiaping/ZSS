@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <ImageView 
+       android:background="@drawable/shape_shopping_cart_line"
+       android:layout_height="1dp"
+       android:layout_width="match_parent"
+       android:layout_alignParentBottom="true"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="83dp"
+       android:singleLine="true"
+       android:text="@string/clear_shopping_car"
+       android:textSize="25sp" 
+       android:gravity="center"
+       android:textColor="@color/text_normal_color"
+       android:layout_centerInParent="true"/>
+ 
+</RelativeLayout>

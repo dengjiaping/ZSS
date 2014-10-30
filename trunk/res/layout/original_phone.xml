@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/catalog_bg"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/usrmg_right_layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="95dp"
+        android:background="@drawable/catalog_top"
+        android:padding="0dp" >
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/change_phone"
+            android:textSize="30sp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="20dp"
+            />
+        <Button
+            android:id="@+id/originalReturnButton"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:background="@drawable/pay_back_selector"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            />
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/usrmg_scrollview2"
+        android:layout_width="fill_parent"
+        android:layout_height="600dp"
+        android:layout_below="@id/usrmg_right_layout2" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/originalPhoneText"
+                style="@style/user_manager_edittext_text"
+                android:maxLines="1"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:textColor="@color/text_normal_color"
+                />
+
+            <TextView
+                android:id="@+id/originalPhoneText1"
+                style="@style/user_manager_textview"
+                android:layout_alignBaseline="@+id/originalPhoneText"
+                android:layout_alignBottom="@+id/originalPhoneText"
+                android:text="@string/original_phone" />
+
+            <EditText
+                android:id="@+id/originalPasswordEdittext"
+                style="@style/user_manager_edittext"
+                android:layout_alignLeft="@id/originalPhoneText"
+                android:layout_alignRight="@id/originalPhoneText"
+                android:layout_below="@id/originalPhoneText"
+                android:inputType="textPassword"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:hint="@string/input_password" />
+
+            <TextView
+                android:id="@+id/usrmg_wholename_textview"
+                style="@style/user_manager_textview"
+                android:layout_alignBaseline="@+id/originalPasswordEdittext"
+                android:layout_alignBottom="@+id/originalPasswordEdittext"
+                android:text="@string/pass_hint" />
+
+            <Button
+                android:id="@+id/checkAccountButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/originalPasswordEdittext"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/button_roundconer_selector"
+                android:text="@string/check_account" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

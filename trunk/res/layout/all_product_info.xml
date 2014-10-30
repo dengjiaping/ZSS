@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="0dp"
+    android:background="@drawable/catalog_bg" >
+
+    <RelativeLayout
+        android:layout_margin="0dp"
+        android:id="@+id/product_navigate"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/shopping_navgate_bg"
+        
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_product_category"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/transparent_background"
+            android:drawableLeft="@drawable/arrow_left"
+            android:text="@string/product_list"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/txt_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="qq"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/btn_product_manual_input"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/transparent_background"
+            android:drawableRight="@drawable/arrow_right"
+            android:text="@string/manual_input"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+    </RelativeLayout>
+
+    <ViewFlipper
+        android:id="@+id/allproductFlipper"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/product_navigate"
+        android:flipInterval="200"
+        android:padding="3dp"
+        android:persistentDrawingCache="animation" >
+
+        <!-- 商品类型列表 -->
+
+        <fragment
+            android:id="@+id/shoppingCategaryFragment"
+            android:name="com.koolyun.mis.fragment.ShoppingProductCategaryFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <!-- 商品分类或优惠信息 -->
+
+        <fragment
+            android:id="@+id/shoppingProductFragment"
+            android:name="com.koolyun.mis.fragment.ShoppingProductFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <!-- 手动输入 -->
+
+        <fragment
+            android:id="@+id/ManualInputFragment"
+            android:name="com.koolyun.mis.fragment.ManualInputFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </ViewFlipper>
+
+</RelativeLayout>

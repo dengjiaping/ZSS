@@ -1,0 +1,82 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/pattern1" >
+	
+    <Button
+        android:id="@+id/leftbar_detail_back_to1"
+        android:layout_width="@dimen/back_btn_width"
+        android:layout_height="@dimen/back_btn_height"
+        android:background="@drawable/leftbar_back_button_xml" />
+
+    <TextView
+        android:id="@+id/receipt_number"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/leftbar_detail_back_to1"
+        android:gravity="center"
+        android:text="@string/sales_statistics"
+        android:textColor="@color/text_normal_color"
+        android:layout_toRightOf="@+id/leftbar_detail_back_to1"
+        android:textSize="30sp" />
+  	
+    <ImageView   
+        android:id="@+id/leftbarimageview_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/leftbar_detail_back_to1"
+        android:background="@drawable/left_grayline" />
+    <Button
+        android:id="@+id/leftbarproductitem_printer"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:textColor="@color/text_normal_color"
+        android:text="@string/print_receipt"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/digtalnumber_button_xml"
+        android:layout_below="@id/receipt_number"
+        android:drawableLeft="@drawable/send_print"
+        android:gravity="left|center_vertical"
+        android:drawablePadding="20dp" 
+        android:layout_marginLeft="50dp"/>
+    <!-- 
+    <EditText
+        android:id="@+id/leftbarproductitem_send_message"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/receipt_number"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/phone_left_drawable_xml"
+        android:hint="@string/input_phone_number" 
+        android:padding="0dp"
+        android:drawablePadding="20dp"
+        android:background="@drawable/text_enter_xml"
+        android:textColor="@color/text_normal_color"
+        android:maxLines="1"
+		android:singleLine="true"
+		android:maxLength="20"
+		android:gravity="center_vertical|left"
+		android:layout_marginLeft="50dp"/>
+    
+    <EditText
+        android:id="@+id/leftbarproductitem_send_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/leftbarproductitem_send_message"
+        android:drawableLeft="@drawable/email_left_drawable_xml"
+        android:layout_alignLeft="@+id/leftbarproductitem_send_message"
+        android:layout_alignRight="@+id/leftbarproductitem_send_message"
+        android:hint="@string/input_email_address" 
+        android:padding="0dp"
+        android:background="@drawable/text_enter_xml"
+        android:drawablePadding="20dp"
+        android:maxLines="1"
+		android:singleLine="true"
+		android:maxLength="30"
+		android:layout_marginTop="20dp"
+		android:gravity="center_vertical|left"/>
+     -->    
+
+    
+    </RelativeLayout>

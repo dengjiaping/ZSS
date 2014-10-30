@@ -1,0 +1,11 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="770dp"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp" >
+
+    <include layout="@layout/manualinput_top" />
+
+    <include layout="@layout/manualinput_bottom" />
+
+</RelativeLayout>

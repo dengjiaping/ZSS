@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="82dp">
+
+    <ImageView
+        android:id="@+id/sale_product_item_imageview"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:contentDescription="@string/accounts" />
+
+   <TextView
+       android:id="@+id/sale_product_item_nuber" 
+       android:background="@drawable/bar_color"
+       android:textColor="@color/solid_white"
+       android:layout_width="wrap_content"
+       android:layout_height="27dp"
+       android:minWidth="27dp"
+       android:gravity="center|bottom"
+       android:paddingBottom="1dp"
+       android:layout_alignParentTop="true"
+	   android:layout_alignParentBottom="true"
+       android:layout_toRightOf="@+id/sale_product_item_imageview"
+       android:visibility="gone"
+       android:textSize="20sp"
+       android:singleLine="true"
+       android:maxLength="4" />
+
+
+   <RelativeLayout
+       android:layout_width="0dp"
+       android:layout_weight="1"
+       android:layout_height="match_parent" >
+   
+	   <TextView
+	       android:id="@+id/sale_product_item_name"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:textColor="@color/text_normal_color"
+		   android:maxLines="2"
+		   android:layout_alignParentLeft="true"
+		   android:layout_centerVertical="true"
+	       android:layout_marginLeft="8dp"
+	       android:textSize="28.0dp" />
+	   
+	   <com.koolyun.mis.widget.MoneyView
+	       android:id="@+id/sale_product_item_price"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:textSize="28.0px"
+	       android:layout_centerVertical="true"
+	       android:textColor="@color/text_normal_color"
+	       android:maxLength="14"
+	       android:singleLine="true"
+	       android:layout_marginRight="20dp"
+	       android:layout_alignParentRight="true" />
+   </RelativeLayout>
+   <RelativeLayout
+       android:layout_width="0dp"
+       android:layout_weight="1"
+       android:layout_height="match_parent" >
+   
+	   <TextView
+	       android:id="@+id/sale_product_item_name2"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:textColor="@color/text_normal_color"
+		   android:maxLines="2"
+		   android:layout_centerVertical="true"
+	       android:textSize="28.0px"
+	       android:layout_marginLeft="20dp"
+	       android:layout_alignParentLeft="true" />
+	   
+	   <com.koolyun.mis.widget.MoneyView
+	       android:id="@+id/sale_product_item_price2"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:textSize="28.0px"
+	       android:layout_centerVertical="true"
+	       android:textColor="@color/text_normal_color"
+	       android:maxLength="14"
+	       android:singleLine="true"
+	       android:layout_marginRight="20dp"
+	       android:layout_alignParentRight="true" />
+   </RelativeLayout>
+
+</LinearLayout>

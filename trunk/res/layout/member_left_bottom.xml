@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <Button
+        android:id="@+id/memberManageButton"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="@drawable/goods_list_button1"
+        android:text="@string/membership_manage"
+        android:textColor="#FDFDFE"
+        android:paddingLeft="35dp"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/memberPayButton"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="@drawable/keyboard_button1"
+        android:text="@string/membership_pay"
+        android:textColor="#FDFDFE"
+        android:paddingLeft="35dp"
+        android:textSize="25sp" />
+
+</LinearLayout>

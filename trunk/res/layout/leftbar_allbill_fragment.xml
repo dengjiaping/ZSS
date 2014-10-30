@@ -1,0 +1,67 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+ 
+    <RelativeLayout
+        android:id="@+id/leftbar_all_layout"
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:layout_marginTop="18dp" >
+    
+	    <Button
+	        android:id="@+id/leftbar_alldeal_back"
+	        style="@style/leftbar_back_style" />
+	    <Button
+	        android:id="@+id/date_picker"
+	        android:layout_width="147dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="5dp"
+	        android:gravity="left|center_vertical"
+	        android:drawablePadding="10dp"
+	        android:background="@drawable/button_comm_selector_xml"
+	        android:drawableLeft="@drawable/calendar"
+	        android:paddingLeft="23dp"
+       		android:textColor="@color/text_normal_color" 
+       		android:text="@string/calender" />
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_alignBottom="@+id/leftbar_alldeal_back"
+	        android:gravity="center"
+	        android:textColor="@color/title_color"
+	        android:layout_toRightOf="@+id/leftbar_alldeal_back"
+	        android:layout_toLeftOf="@+id/date_picker"
+	        android:text="@string/leftBarSaleRecord"
+	        android:textSize="30.0px" />
+    
+    </RelativeLayout>
+    <ImageView   
+        android:id="@+id/leftbar_all_imgview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/leftbar_all_layout"
+        android:background="@drawable/left_grayline"
+        android:layout_alignLeft="@id/leftbar_all_layout"
+        android:layout_alignRight="@id/leftbar_all_layout"
+        android:layout_marginTop="13dp"
+        android:contentDescription="@string/appChinaName" />
+    
+    <com.koolyun.mis.widget.MyExpandableListView
+        android:id="@+id/leftbar_all_expandListview"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent" 
+        android:layout_alignRight="@id/leftbar_all_imgview"
+        android:layout_alignLeft="@id/leftbar_all_imgview"
+        android:layout_below="@+id/leftbar_all_imgview"
+        android:drawSelectorOnTop="true"
+        android:cacheColorHint="@android:color/transparent">
+     </com.koolyun.mis.widget.MyExpandableListView>
+    
+</RelativeLayout>

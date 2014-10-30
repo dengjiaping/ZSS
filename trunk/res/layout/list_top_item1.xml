@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <Button
+        android:id="@+id/searchbuttonfirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/item_search_button_xml"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/productfirstsummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/product_list"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/all_back"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/pay_back_selector"
+        android:paddingLeft="40dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

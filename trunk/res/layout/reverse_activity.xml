@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/billing_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/repeat_bg">
+    
+    <RelativeLayout
+    android:id="@+id/refund_top"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/pay_top_height"
+    android:background="@drawable/pay_top">
+
+    	<Button 
+            android:id="@+id/order_cancel"
+            android:layout_width="101dp"
+            android:layout_height="98dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/pay_back_selector"
+            android:layout_margin="5dp"/>
+    	
+        <com.koolyun.mis.widget.MoneyView 
+            	android:id="@+id/order_cancel_text"
+            	android:layout_alignParentRight="true"
+            	android:layout_marginRight="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="48sp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:textColor="@color/text_normal_color"/>
+        <TextView 
+            android:id="@+id/user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+			android:drawableLeft="@drawable/logo"
+			android:drawablePadding="20dp"
+			android:padding="0dp"
+            android:text="@string/user_name"
+            android:maxWidth="400dp"
+            android:maxLines="2"
+            android:textSize="36sp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/text_normal_color"/>
+    	</RelativeLayout>
+    <LinearLayout 
+        android:layout_below="@+id/refund_top"
+        android:id="@+id/refund_page"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+	    <TextView 
+		    android:id="@+id/refund_alert"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textColor="@color/text_normal_color"
+		    android:text="@string/order_reverse_alert"
+		    android:textSize="40sp" />
+	    
+	    <com.koolyun.mis.widget.MoneyView  
+	        android:id="@+id/refund_money"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="30dp"
+	        android:textColor="#1111ee"
+	        android:textSize="60sp" />
+	    
+	    <Button 
+	        android:id="@+id/confirm_btn"
+	        android:layout_width = "697dp"
+	        android:layout_height="60dp"
+	        android:layout_marginTop="30dp"
+	        android:background="@drawable/btn_bg_xml"
+	        android:textSize="30sp"
+	        android:textColor="#fff"
+	        android:text="@string/sure"
+	        android:shadowColor="#000"
+	        android:shadowDy="1"
+	        android:shadowRadius="1"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_below="@+id/refund_top"
+        android:id="@+id/refund_succeed"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:gravity="center">
+		<Button 
+	        android:id="@+id/trade_state"
+	        android:layout_width="wrap_content"
+	        android:layout_height = "wrap_content"
+	        android:background="@drawable/success_button_xml"/>
+        <TextView 
+		    android:id="@+id/refund_succeed_alert"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="30dp"
+		    android:textColor="@color/text_normal_color"
+		    android:text="@string/reverse_success"
+		    android:textSize="40sp" />
+        
+	</LinearLayout>	
+        
+	
+</RelativeLayout>

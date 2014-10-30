@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:gravity="center">
+    
+    <RelativeLayout
+        android:id="@+id/trade_layout"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_horizontal"
+    	android:layout_centerHorizontal="true" >
+    	
+	    <Button 
+	        android:id="@+id/trade_state"
+	        android:layout_marginTop="140dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height = "wrap_content"
+	        android:enabled="false"
+	        android:background="@drawable/success_button_xml"/>
+	    
+	    <TextView
+	        android:id="@+id/trade_sent_info"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/trade_state"
+	        android:layout_alignBaseline="@+id/trade_state"
+	        android:layout_alignBottom="@+id/trade_state"
+	        android:text="@string/sent_trade_info"
+	        android:layout_marginLeft="50dp"
+	        android:textColor="@color/text_normal_color"
+	        android:textSize="30sp" />
+    </RelativeLayout>
+      <!-- 
+    <Button 
+        android:id="@+id/print_receipt_btn"
+        android:layout_width = "@dimen/pay_viewiten_width"
+        android:layout_height="@dimen/pay_viewiten_height"
+        android:layout_marginTop="30dp"
+        android:padding="0dp"
+        android:background="@drawable/button_xml"
+		android:drawableLeft="@drawable/printer_left_drawable_xml"
+        android:textColor="@color/text_normal_color"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical|left"
+        android:hint="@string/print_receipt"
+        android:textSize="30sp"/>
+     
+    <com.cynovo.sirius.ui.widget.TextWithButton 
+        android:id="@+id/phone_input"
+        android:layout_marginTop="25dp"
+        android:layout_width = "@dimen/pay_viewiten_width"
+        android:layout_height="@dimen/pay_viewiten_height"
+        android:inputType="phone"
+        android:drawableLeft="@drawable/phone_left_drawable_xml"
+        android:hint="@string/input_phone_number"/>
+    
+    <com.cynovo.sirius.ui.widget.TextWithButton 
+        android:id="@+id/email_input"
+        android:layout_width = "@dimen/pay_viewiten_width"
+        android:layout_height="@dimen/pay_viewiten_height"
+        android:layout_marginTop="25dp"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/email_left_drawable_xml"
+        android:hint="@string/input_email_address"/>
+	 -->
+
+    
+    <Button 
+        android:id="@+id/tradeBackDealBtn"
+        android:layout_width = "@dimen/pay_viewiten_width"
+        android:layout_height="@dimen/pay_viewiten_height"
+        android:layout_marginTop="80dp"
+        android:padding="0dp"
+        android:background="@drawable/sale_button"
+        android:textColor="@color/text_normal_color"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/trade_layout"
+        android:hint="@string/backshoppPage"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="150dp"
+        android:layout_below="@id/tradeBackDealBtn" />
+    
+</RelativeLayout>

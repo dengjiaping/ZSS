@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:layout_gravity="center" >
+
+    <TextView
+        android:id="@+id/onsale_name"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/v2_gridview_item_bg_nor"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="aa"
+        android:textColor="@color/v2_product_display_normal"
+        android:textSize="30sp" />
+
+</AbsoluteLayout>

@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shopping_navgate_bg"
+    android:gravity="center" >
+
+    <Button
+        android:id="@+id/btn_save_or_update"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shopping_cart_money_bg"
+        android:gravity="center"
+        android:text="确定保存"
+        android:textColor="@color/v2_navagate_title_bg"
+        android:textSize="26sp" />
+</RelativeLayout>

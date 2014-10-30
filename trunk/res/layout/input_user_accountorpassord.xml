@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_user_account"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/btn_bg_2"   >
+ <!--  
+    <TextView
+        android:id="@+id/user_input_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="43dp"
+        android:layout_centerInParent="true"
+        android:text="请输入密码:"
+        android:textSize="25sp" />
+    
+    <EditText 
+	    android:id="@+id/user_input_password_edittext1"
+	            android:layout_width ="338dp"
+	            android:layout_height="wrap_content"
+	            android:padding="0dp"
+	            android:background="@drawable/text_enter_xml"
+		        android:drawableLeft="@drawable/pass_left_drawable_xml"
+		        android:layout_below="@+id/user_input_textview"
+		        android:hint="@string/pass_hint"
+		        android:maxLines="1"
+		        android:layout_marginLeft="31dp"
+		        android:drawablePadding="12dp"
+		        android:singleLine="true"
+		        android:maxLength="10"
+		        android:textColor="@color/text_normal_color"
+		        android:inputType="textPassword"
+		        android:textSize="28sp"
+		        android:focusable="false"/>
+    
+    
+
+	<EditText 
+	    android:id="@+id/user_input_password_edittext"
+	            android:layout_width ="338dp"
+	            android:layout_height="wrap_content"
+	            android:padding="0dp"
+	            android:background="@drawable/text_enter_xml"
+		        android:drawableLeft="@drawable/pass_left_drawable_xml"
+		        android:layout_below="@+id/user_input_password_edittext1"
+		        android:hint="@string/pass_hint"
+		        android:maxLines="1"
+		        android:layout_marginLeft="31dp"
+		        android:drawablePadding="12dp"
+		        android:singleLine="true"
+		        android:maxLength="10"
+		        android:textColor="@color/text_normal_color"
+		        android:inputType="textPassword"
+		        android:textSize="28sp"
+		        android:selectAllOnFocus="true" />
+
+
+    <Button
+        android:id="@+id/user_input_confirm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_input_password_edittext"
+        android:layout_alignRight="@+id/user_input_password_edittext"
+        android:layout_below="@+id/user_input_password_edittext"
+        android:layout_marginTop="22dp"
+        android:text="确定" />
+    
+    
+     
+  -->
+    
+ 
+</RelativeLayout>

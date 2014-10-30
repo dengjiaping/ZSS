@@ -1,0 +1,5 @@
+<resources>
+    
+    <dimen name="verify_code_edittext_length">160dp</dimen>
+	
+</resources>

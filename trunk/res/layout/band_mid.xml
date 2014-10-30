@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        />
+    
+    <!-- <RelativeLayout
+        android:id="@+id/band_mid_title"
+        android:layout_width="750dp"
+        android:background="@drawable/catalog_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_height="95dp" >
+
+        <TextView
+            android:id="@+id/productfirstsummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/select_merchant"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/mid_back"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/pay_back_selector"
+            android:paddingLeft="40dp"
+            android:visibility="visible" />
+    </RelativeLayout> -->
+
+    <ListView
+        android:id="@+id/bandMidListView"
+        android:layout_width="750dp"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+    	android:background="#eeeeee"
+    	android:layout_marginTop="20dp"
+        android:scrollbars="none" />
+
+</RelativeLayout>

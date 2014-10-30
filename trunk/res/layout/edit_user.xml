@@ -1,0 +1,232 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/catalog_bg"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/usrmg_right_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="95dp"
+        android:background="@drawable/catalog_top"
+        android:padding="0dp" >
+
+        <Button
+            android:id="@+id/usermsg_save_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_roundconer_selector"
+            android:gravity="center"
+            android:text="@string/update_account"
+            android:textSize="30sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/usrmg_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/usrmg_right_layout" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+			<!-- 手机号 -->
+            <TextView
+                android:id="@+id/edit_phone"
+                style="@style/user_manager_edittext_text"
+                android:hint="@string/input_phoneno"
+                android:gravity="center_vertical"
+                android:textSize="22sp"
+                android:background="@android:color/transparent"
+                android:textColor="@color/text_normal_color"
+                />
+
+            <RelativeLayout
+                android:id="@+id/changePhoneLayout"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignRight="@id/edit_phone"
+                android:layout_alignTop="@id/edit_phone"
+                android:background="@drawable/editshape"
+                >
+                <!--  -->
+	            <ImageView
+	                android:id="@+id/changePhoneImage"
+	                android:layout_width="28dp"
+	                android:layout_height="28dp"
+			        android:background="@drawable/write"
+			        android:layout_centerInParent="true" 
+			        />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/usrmg_name_textview"
+                style="@style/user_manager_textview"
+                android:layout_alignBaseline="@+id/edit_phone"
+                android:layout_alignBottom="@+id/edit_phone"
+                android:text="@string/phone_number" />
+            <!-- 密码 -->
+            <TextView
+                android:id="@+id/edit_password"
+                style="@style/user_manager_edittext_text"
+                android:layout_alignLeft="@id/edit_phone"
+                android:layout_alignRight="@id/edit_phone"
+                android:layout_below="@id/edit_phone"
+                android:text="************"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:background="@android:color/transparent"
+                />
+
+            <RelativeLayout
+                android:id="@+id/changePswLayout"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignRight="@id/edit_password"
+                android:layout_alignTop="@id/edit_password"
+                android:background="@drawable/editshape"
+                >
+                <!--  -->
+	            <ImageView
+	                android:id="@+id/changePswImage"
+	                android:layout_width="28dp"
+	                android:layout_height="28dp"
+			        android:background="@drawable/write"
+			        android:layout_centerInParent="true" 
+			        />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/edit_password_textview"
+                style="@style/user_manager_textview"
+                android:layout_alignBaseline="@+id/edit_password"
+                android:layout_alignBottom="@+id/edit_password"
+                android:text="@string/pass_hint" />
+			<!-- 姓氏 -->
+            <EditText
+                android:id="@+id/edit_first_name1"
+                style="@style/user_manager_edittext"
+                android:layout_alignLeft="@id/edit_password"
+                android:layout_alignRight="@id/edit_password"
+                android:layout_below="@id/edit_password"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:maxLength="16"
+                android:hint="@string/last_name_hint" />
+            
+            <Button
+                android:id="@+id/edit_first_name_button"
+                style="@style/user_manager_edittext_text"
+                android:layout_alignLeft="@id/edit_password"
+                android:layout_alignRight="@id/edit_password"
+                android:layout_below="@id/edit_password"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/edit_first_name_textview"
+                style="@style/user_manager_textview"
+                android:layout_alignBaseline="@+id/edit_first_name1"
+                android:layout_alignBottom="@+id/edit_first_name1"
+                android:text="@string/last_name" />
+			<!-- 名字 Last Name -->
+            <EditText
+                android:id="@+id/edit_last_name1"
+                style="@style/user_manager_edittext"
+                android:layout_alignLeft="@id/edit_first_name1"
+                android:layout_alignRight="@id/edit_first_name1"
+                android:layout_below="@id/edit_first_name1"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:maxLength="16"
+                android:hint="@string/first_name_hint" />
+
+            <Button
+                android:id="@+id/edit_last_name_button"
+                style="@style/user_manager_edittext_text"
+                android:layout_alignLeft="@id/edit_first_name1"
+                android:layout_alignRight="@id/edit_first_name1"
+                android:layout_below="@id/edit_first_name1"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/edit_last_name_textview"
+                style="@style/user_manager_textview"
+                android:layout_alignBaseline="@+id/edit_last_name1"
+                android:layout_alignBottom="@+id/edit_last_name1"
+                android:text="@string/first_name" />
+
+            <!-- <EditText
+                android:id="@+id/usrmg_identify_edittext"
+                style="@style/user_manager_edittext"
+                android:layout_alignLeft="@id/usermg_wholename_edittext"
+                android:layout_alignRight="@id/usermg_wholename_edittext"
+                android:layout_below="@id/usermg_wholename_edittext"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLines="1"
+                android:hint="@string/input_identity_name" />
+
+            <TextView
+                android:id="@+id/usrmg_identify_textview"
+                style="@style/user_manager_textview"
+                android:layout_alignBaseline="@+id/usrmg_identify_edittext"
+                android:layout_alignBottom="@+id/usrmg_identify_edittext"
+                android:text="@string/acount_identity" /> -->
+
+            <Spinner
+                android:id="@+id/usermg_spin"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@id/edit_last_name1"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@id/edit_last_name1"
+                android:layout_below="@id/edit_last_name1"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/button_roundconer_selector"
+                android:drawSelectorOnTop="true"
+                android:prompt="@string/accounts" />
+
+            <TextView
+                android:id="@+id/usrmg_spinner_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/usermg_spin"
+                android:layout_alignBottom="@+id/usermg_spin"
+                android:layout_marginLeft="24dp"
+                android:text="@string/property_set"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/usrmg_delete_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/usermg_spin"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="170dp"
+                android:background="@drawable/manager_delet_select"
+                android:textColor="@color/gray_color"
+                android:text="@string/delete_account"
+                android:textSize="22sp"
+                android:shadowColor="#000"
+       	 		android:shadowDy="1"
+        		android:shadowRadius="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/usrmg_delete_btn" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

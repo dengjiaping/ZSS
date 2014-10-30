@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item android:state_checked="true" 
+    android:drawable="@drawable/button_yellow" /><!--选中时效果-->
+ <item android:state_checked="false" 
+   android:drawable="@drawable/button" /><!--未选中时效果-->
+    
+    </selector>
+    
+<!--  
+<item android:state_window_focused="false" android:state_enabled="true"
+android:state_checked="true" android:drawable="@drawable/buwaijia_0" />
+
+<item android:state_window_focused="false" android:state_enabled="true"
+android:state_checked="false" android:drawable="@drawable/buwaijia_1" />
+
+<item android:state_enabled="true" android:state_checked="true"
+android:state_pressed="true" android:drawable="@drawable/buwaijia_0" />
+
+<item android:state_enabled="true" android:state_checked="false"
+android:state_pressed="true" android:drawable="@drawable/buwaijia_1" />
+
+
+<item android:state_focused="true" android:state_enabled="true"
+android:state_checked="true" android:drawable="@drawable/buwaijia_0" />
+
+<item android:state_focused="true" android:state_enabled="true"
+android:state_checked="false" android:drawable="@drawable/buwaijia_1" />
+
+<item android:state_enabled="true" android:state_checked="false"
+android:drawable="@drawable/buwaijia_1" />
+
+<item android:state_enabled="true" android:state_checked="true"
+android:drawable="@drawable/buwaijia_0" />
+</selector> 
+-->

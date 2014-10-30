@@ -1,0 +1,38 @@
+<RelativeLayout
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+ 
+        <EditText
+            android:id="@+id/commonbuttonsecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="75dp" 
+            android:paddingTop="0dp"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:background="@drawable/search_area" />
+
+        <TextView
+            android:id="@+id/productsecondsummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/commonbuttonsecond"
+            android:layout_alignBottom="@+id/commonbuttonsecond"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="130dp"
+            android:text="@string/allname"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/search_back"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignBottom="@+id/commonbuttonsecond"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/pay_back_selector"
+            android:paddingLeft="40dp" />
+        
+    </RelativeLayout> 

@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/cate_name"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:maxWidth="500dp"
+        android:maxLines="2"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="名称"
+		android:layout_centerVertical="true"
+		android:gravity="center_vertical|left"
+        android:textSize="30sp" />
+	
+    <Button
+        android:id="@+id/cate_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:background="@drawable/button_roundconer_selector" 
+        android:drawableLeft="@drawable/write"
+        android:paddingLeft="20dp"/>
+        
+    <com.koolyun.mis.widget.MoneyView
+        android:id="@+id/product_count"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_toLeftOf="@+id/cate_edit"
+        android:layout_marginRight="25dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:textSize="30sp" />
+    
+</RelativeLayout>

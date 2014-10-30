@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent_background" >
+
+    <RelativeLayout
+        android:id="@+id/product_manage_left_layout"
+        android:layout_width="770dp"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/catalog_bg"
+        android:padding="0dp" >
+
+        <RelativeLayout
+            android:id="@+id/product_navigate"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="0dp"
+            android:background="@drawable/shopping_navgate_bg"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_product_category"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/transparent_background"
+                android:drawableLeft="@drawable/arrow_left"
+                android:text="@string/product_list"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/txt_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="qq"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+             <Button
+                android:id="@+id/btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/transparent_background"
+                android:drawableLeft="@drawable/product_manage_btn_add_icon"
+               android:drawablePadding="5dp"
+                android:text="@string/product_category_add"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_product_category"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:background="@drawable/product_manage_bottom_indicate_selector"
+                android:gravity="center"
+                android:text="@string/goodskind"
+                android:textColor="@android:color/black"
+                android:textSize="26.0px" />
+			<TextView 
+			    android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#C9C9C9"
+			    />
+            <RadioButton
+                android:id="@+id/rb_product_attr"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:background="@drawable/product_manage_bottom_indicate_selector"
+                android:gravity="center"
+                android:text="@string/goodsattr"
+                android:textColor="@android:color/black"
+                android:textSize="26.0px" />
+            <TextView 
+			    android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#C9C9C9"
+			    />
+             <RadioButton
+                android:id="@+id/rb_product_onsale"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/product_manage_bottom_indicate_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/goodsonsale"
+                android:textColor="@android:color/black"
+                android:textSize="26.0px" />
+        </RadioGroup>
+
+        <ViewFlipper
+            android:id="@+id/allproductFlipper"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/group"
+            android:layout_below="@id/product_navigate"
+            android:flipInterval="200"
+            android:padding="3dp"
+            android:persistentDrawingCache="animation" >
+
+            <!-- 商品类型列表 -->
+
+            <ListView
+                android:id="@+id/lv_product_categary_manage"
+                android:layout_width="fill_parent"
+                 android:listSelector="@drawable/transparent_background"
+                android:layout_height="fill_parent" />
+            <!-- 商品列表 -->
+
+            <ListView
+                android:id="@+id/lv_product_manage"
+                android:layout_width="fill_parent"
+                 android:listSelector="@drawable/transparent_background"
+                android:layout_height="fill_parent" />
+
+            <ListView
+                android:id="@+id/lv_product_attr_listView"
+                android:layout_width="fill_parent"
+                 android:listSelector="@drawable/transparent_background"
+                android:layout_height="fill_parent" />
+
+            <ListView
+                android:id="@+id/lv_product_onsale_listView"
+                 android:listSelector="@drawable/transparent_background"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </ViewFlipper>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/productShowItemFragment"
+        android:layout_width="470dp"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/product_manage_left_layout" >
+    </FrameLayout>
+
+</RelativeLayout>

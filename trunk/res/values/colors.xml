@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="red">#7f00</drawable>
+    <drawable name="blue">#770000ff</drawable>
+    <drawable name="green">#7700ff00</drawable>
+    <drawable name="yellow">#77ffff00</drawable>
+    <drawable name="white">#fff</drawable>
+    <drawable name="touming">#00000000</drawable>
+    <drawable name="grey">#50000000</drawable>
+    <drawable name="bar_color">#c6c6c6</drawable>
+    <drawable name="screen_background_black">#ff000000</drawable>
+    <drawable name="translucent_background">#e0000000</drawable>
+    <drawable name="transparent_background">#00000000</drawable>
+    <drawable name="update_before">#EEEDED</drawable>
+    <drawable name="update_after">#e3e3e2</drawable>
+    <drawable name="attribute_after">#5fCEEA</drawable>
+    <drawable name="attribute_before">#EEEEEE</drawable>
+
+    <color name="solid_white">#fff</color>
+    <color name="gray_color">#ffFFFF</color>
+    <color name="solid_red">#f00</color>
+    <color name="solid_blue">#0000ff</color>
+    <color name="solid_green">#f0f0</color>
+    <color name="solid_yellow">#ffffff00</color>
+    <color name="artion_bar_color">#f0f0f0</color>
+    <color name="text_normal_color">#818181</color>
+    <color name="clear_shop">#C4C4C4</color>
+    <color name="input_hint">#C7C7C7</color>
+    <color name="bar_normal_color">#666</color>
+    <color name="manu_input_color">#686868</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#e3e3e3</color>
+    <color name="listview_item_bg_nor">#FFFFFF</color>
+    <color name="listview_item_bg_sel">#1CA9DA</color>
+    <color name="blue_text">#32abd6</color>
+
+    <drawable name="head_checked">#0973AF</drawable>
+    <drawable name="head_not_checked">#00EEEEEE</drawable>
+
+    <color name="v2_navagate_title_bg">#0973AF</color>
+    <color name="v2_gridview_item_bg_nor">#FFDBB7</color>
+    <color name="v2_gridview_item_bg_sel">#FF9329</color>
+    <color name="txt_shopping_cat_total_money">#FF9329</color>
+    <color name="txt_shopping_cat_item_select">#FF9329</color>
+    <color name="transparent_background">#00000000</color>
+    <color name="v2_cart_item_number_bg">#C9CACF</color>
+    <color name="v2_b6e2fb">#b6e2fb</color>
+    <color name="red">#FF0000</color>
+    <color name="v2_product_display_normal">#6D6A69</color>
+    <color name="v2_txt_shopping_cat_item_attr_bg">#CAC9CF</color>
+	<color name="title_color">#0973AF</color>
+	<color name="left_red_color">#d65E5E</color>
+	<color name="line_list_color">#D1D1D1</color>
+</resources>

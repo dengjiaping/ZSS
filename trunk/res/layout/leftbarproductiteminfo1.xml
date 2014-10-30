@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/pattern1" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/leftbar_top_layout"
+        android:layout_marginTop="15dp" >
+    
+	    <Button
+	        android:id="@+id/leftbar_detail_back"
+	        style="@style/leftbar_back_style"
+	        android:layout_marginLeft="20dp" />
+	
+	    <Button
+	        android:id="@+id/order_printer"
+	        android:layout_width="147dp"
+        	android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="5dp"
+	        android:text="@string/printer_pirnt"
+        	android:gravity="left|center_vertical"
+        	android:drawablePadding="10dp"
+        	android:background="@drawable/button_roundconer_selector"
+       	 	android:drawableLeft="@drawable/printer"
+        	android:paddingLeft="23dp"
+	         android:textColor="@color/text_normal_color" />
+	
+	    <TextView 
+	        android:id="@+id/leftbarTitle"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:layout_toLeftOf="@+id/order_printer"
+	        android:layout_toRightOf="@+id/leftbar_detail_back"
+	        android:gravity="center"
+	        android:textColor="@color/text_normal_color"
+	        android:textSize="30.0px" />
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/leftbarimageview_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/leftbar_top_layout"
+        android:background="@drawable/blue_line" />
+
+    <ScrollView
+        android:id="@+id/scrollview_left"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/leftbarimageview_line"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/lr_button_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/left_button"
+                    android:layout_width="210dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/left_button_selector_xml"
+                    android:text="@string/send_orderinfo"
+                    android:textColor="@color/text_normal_color"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/right_button"
+                    android:layout_width="210dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/left_button_selector_xml"
+                    android:text="@string/revocation_order"
+                    android:textColor="@color/text_normal_color"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/leftbar_deal_more"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/lr_button_group"
+                android:layout_below="@+id/lr_button_group"
+                android:layout_marginTop="15dp"
+                android:background="#00FFFFFF"
+                android:textColor="@color/title_color"
+                android:text="@string/order_detail"
+                android:textSize="30.0px" />
+            
+             <com.koolyun.mis.widget.MoneyView
+		        android:id="@+id/leftbarproductprice"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignTop="@id/leftbar_deal_more"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginRight="10dp"
+		        android:textColor="@color/left_red_color"
+		        android:textSize="30.0px" />
+			
+            <View
+                android:id="@+id/leftbar_blue_line"
+                android:layout_width="match_parent"
+                android:layout_alignLeft="@id/leftbar_deal_more"
+                android:layout_alignRight="@id/leftbar_deal_more"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/leftbar_deal_more" 
+                android:background="@drawable/blue_line" />
+            
+            <LinearLayout
+                android:id="@+id/line1Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/leftbar_blue_line"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+	            android:layout_marginRight="20dp" >
+	            <TextView
+	                android:id="@+id/leftbar_pay_method"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:drawableLeft="@drawable/card36"
+	                android:textColor="@color/text_normal_color"
+	                android:drawablePadding="30dp"
+	                android:textSize="26.0px" />
+	            
+	             <TextView 
+	                android:id="@+id/leftbar_deal_deal_time"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1" 
+	                android:drawableLeft="@drawable/time36"
+	                android:textColor="@color/text_normal_color"
+	                android:drawablePadding="30dp"
+	                android:gravity="left"
+	                android:paddingRight="80dp"
+	                android:textSize="26.0px" />
+			</LinearLayout>
+			
+            <View
+               android:id="@+id/leftdealLine"
+               android:layout_width="wrap_content"
+               android:layout_height="1dp"
+               android:layout_below="@id/line1Layout"
+               android:background="@color/line_list_color"
+               android:layout_marginTop="20dp" />
+            
+            <LinearLayout 
+                android:id="@+id/line2Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/leftdealLine"
+                android:layout_alignLeft="@id/line1Layout"
+                android:layout_alignRight="@id/line1Layout"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+                
+	            <TextView
+	                android:id="@+id/leftbar_deal_deal_number"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:textColor="@color/text_normal_color"
+	                android:drawableLeft="@drawable/receipt_num36"
+	                android:drawablePadding="30dp"
+	                android:textSize="26.0px" />
+	
+	
+	            <TextView
+	                android:id="@+id/leftbar_deal_user_name"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:textColor="@color/text_normal_color"
+	                android:drawableLeft="@drawable/receipt_num36"
+	                android:drawablePadding="30dp"
+	                android:gravity="left"
+	                android:paddingRight="80dp"
+	                android:textSize="26.0px" />
+            </LinearLayout>
+            
+           <View
+               android:id="@+id/leftTopLine"
+               android:layout_width="wrap_content"
+               android:layout_height="1dp"
+               android:layout_below="@id/line2Layout"
+               android:background="#D1D1D1"
+               android:layout_marginTop="20dp" />
+
+            <ListView
+                android:id="@+id/leftbarlistviewdeal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/leftTopLine"
+
+                android:drawSelectorOnTop="true"
+                android:listSelector="@android:color/transparent"
+                android:fillViewport="true"
+                android:scrollbars="none" />
+
+            <Button
+                android:id="@+id/leftbar_checkout_deal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/leftbarlistviewdeal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_roundconer_selector"
+                android:text="@string/lookup_bills"
+                android:textColor="@color/text_normal_color"
+                android:textSize="30sp" >
+            </Button>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

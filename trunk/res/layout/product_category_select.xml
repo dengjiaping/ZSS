@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/attribute_input"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/title"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:text="选择产品分类" />
+
+    <GridView
+        android:layout_below="@id/title"
+        android:id="@+id/gv_product_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:drawSelectorOnTop="true"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:listSelector="@null"
+        android:numColumns="4"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp" />
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/band_mid_layout1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            style="@style/select_mit_tid_text_style"
+            android:text="@string/merchant_name"
+            android:paddingLeft="10dp"
+            android:background="@drawable/item_bg"
+            />
+        <TextView
+            style="@style/select_mit_tid_text_style"
+            android:text="@string/merchant_id"
+            android:paddingLeft="10dp"
+            android:background="@drawable/item_bg"
+            />
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/band_mid_imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/have_more_hint"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/band_mid_layout2"
+        android:layout_toRightOf="@id/band_mid_layout1"
+        android:layout_toLeftOf="@id/band_mid_imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:background="@drawable/band_bg"
+        >
+        <TextView
+            android:id="@+id/mNameText"
+            style="@style/select_mit_tid_text_style"
+            android:text="@string/app_name"
+            android:paddingLeft="20dp"
+            />
+        <TextView
+            android:id="@+id/mIDText"
+            style="@style/select_mit_tid_text_style"
+            android:text="@string/app_name"
+            android:paddingLeft="20dp"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dbdbdb"
+        android:layout_toLeftOf="@id/band_mid_imageView1"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>
